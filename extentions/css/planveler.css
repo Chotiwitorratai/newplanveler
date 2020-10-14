@@ -64,7 +64,6 @@ position: relative;
 bottom: -182px;
 width: 100%;
 height: 182px;
-margin-left: ;
 background: #1C3C25;
 font-family: my_kids_handwrittenregular;
 font-style: normal;
@@ -211,7 +210,14 @@ font-family: 'ageo';
   text-align: center;
   letter-spacing: 10px;
 }
-
+.headerlogin {
+  font-family: 'space_monoregular';
+  font-size: 60px;
+  color:#235330;
+  margin-top: 100px;
+  text-align: center;
+  letter-spacing: 3px;
+}
 .search {
   width: 787px;
   margin-top: 100px;
@@ -255,6 +261,85 @@ font-family: 'ageo';
   bottom: 85px;
   position: relative;
   border-radius: 5px
+}
+
+.stupid-line {
+  position: absolute;
+width: 40%;
+height: 0px;
+left: 3%;
+top: 250px;
+border: 0.1px solid #1C3C25;
+}
+
+.stupid-line2 {
+  position: absolute;
+width: 40%;
+height: 0px;
+right: 3%;
+top: 250px;
+border: 0.1px solid #1C3C25;
+}
+.stupid-line3{
+position: absolute;
+width: 600px;
+height: 0px;
+left: -34%;
+top: 68%;
+border: 0.1px solid #1C3C25;
+transform: rotate(90deg);
+}
+.login-logo img{
+position: absolute;
+width: 171px;
+height: 96px;
+left: 43%;
+top: 204px;
+
+}
+
+.loginbox input {
+  background-color:rgba(4, 134, 253, 0.5);
+  color: rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  backdrop-filter: blur(4px);
+  mix-blend-mode: normal;
+  border-radius: 15px;
+  align-items: center;
+  width: 347px;
+  height: 53px;
+}
+
+.loginbtu {
+margin-left: 30%;
+margin-top: 60px;
+margin-bottom: 19px;
+width: 139px;
+height: 51px;
+background: rgba(255, 0, 0, 0.9);
+border-radius: 18px;
+font-style: normal;
+font-size: 25px;
+line-height: 43px;
+text-align: center;
+color: white;
+}
+
+.optionpassword{
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center; 
+  color: rgba(5, 0, 255, 0.5);
+}
+
+#headloginpage {
+  box-sizing: border-box;
+  height: 130px;
+  width: 100%;
 }
 
 .search-icon:hover {
@@ -303,7 +388,8 @@ font-family: 'ageo';
 
 .content {
   margin-bottom: 300px;
-  margin-left: 250px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #rightshowimg {
@@ -337,6 +423,15 @@ font-weight: normal;
   color: #5A5A5A;
 }
 
+.content-4 {
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+text-align: center;
+color: rgba(77, 53, 49, 0.71);
+}
+
 .loginbar {
   margin-top: 10px;
 }
@@ -344,6 +439,69 @@ font-weight: normal;
 .header-website {
   font-size: 65px;
   color: #1c3c25;
+}
+
+.emp-profile{
+  padding: 3%;
+  margin-top: 200px;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+}
+.profile-img{
+  text-align: center;
+}
+.profile-img img{
+  width: 180px;
+  height: 183px;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -15%;
+  width: 165px;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  
+}
+.profile-edit-btn{
+  margin-top: 20px;
+  border: none;
+  border-radius: 1.5rem;
+  width: 100%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+
+}
+.content-2 a{
+  text-decoration: none;
+  color: #454545;
+  font-size: 14 px;
+  line-height: 29px;
+}
+.profile-tab p{
+  color: #B19999;
+}
+#myTabContent {
+  margin-top: -120px;
+  padding: 5px;
+  
+}
+#myTabContent .row{
+border-bottom:  1px solid #454545;
+padding: 10px;
+}
+.headerlogin {
+
 }
 
 @media screen and (max-height: 600px) {
@@ -475,8 +633,25 @@ font-weight: normal;
     width: 300px;
     margin-left: -90px;
   }
-  .imgshow {
-    width: 300px;
+  .bigimg {
+    display: none;
+  }
+  .imgshow{
+    margin-left: -10px;
+  }
+  .search .search-input {
+    font-size: 15px;
+    margin-top: 0px;
+    line-height: 50px;
+  }
+  .search {
+    height: 49px;
+  }
+  .search-icon {
+    font-size: 15px;
+    height: 50px;
+    width: 90px;
+    margin-top: 35px;
   }
 }
 

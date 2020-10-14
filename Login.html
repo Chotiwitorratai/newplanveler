@@ -1,5 +1,5 @@
 <html>
-  <!-- comment -->
+  <!-- miwwee  -->
 <head>
 <title>Planveler</title>
 <meta name="viewport" content="width=device-width, initial-scale=1,height=device-height">
@@ -12,38 +12,51 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="/extentions/css/planveler.css">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+<style>
+  body {
+    background: url(/pic/bg3.png);
+    background-size: cover;
+  }
+</style>
 </head>
 <body onclick="closeNav()">
 <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="mainpage.html"><img src="/pic/Group 10.png"></a>
-  <a href="mainpage.html"><img src="/pic/mytrip.png"></a>
-  <a href="#"><img src="/pic/Group 11.png"></a>
-  <a href="#"><img src="/pic/Group 12.png"></a>
-  <a href="#"><img src="/pic/Group 13.png"></a>
-  <a href="/planveler.html"><img src="/pic/Group 14.png"></a>
-  <a href="#"><img src="/pic/Group 15.png"></a>
-  <a href="#"><img src="/pic/Group 16.png"></a>
+  <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
+  <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+  
+  <a href="mainpage.html">หน้าหลัก</a>
+  <a href="mainpage.html">ทริปของฉัน</a>
+  <a href="mainpage.html">รายการที่บันทึก</a>
+  <a href="mainpage.html">รายการทริปที่แนะนำ</a>
+  <a href="mainpage.html">แนะนำการใช้งาน</a>
+  <a href="mainpage.html">เกี่ยวกับเรา</a>
+  <a href="mainpage.html">คำถามที่พบบ่อย</a>
+  <a href="mainpage.html">ติดต่อเรา</a>
+
+  
   <div style="position: absolute;bottom: 0px;">
-  <p><p><p></p><a href="#"><img src="/pic/Group 17.png"></a></p></div>
+  <p><p><p></p><a href="#">Login</a></p></div>
 </div>
 
 <div class="container">
         <div class="row">
 <div id="navbar">
 <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
+
 <span class="icon"> <a href="mainpage.html"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
   </a>
  </span>
 
  <div class="col-lg-2 col-md-2 col-lg-2 offset-lg-6 offset-9" style="padding-right:20px;">
-   <div class="row" style="float: right;">
-    <div class="loginbar">
-      <a href="#changlanguage"><img src="/pic/Group 3.png" width="90" height="25"alt="th/eng"></a> 
-  </div>
+  <div class="row" style="float: right;">
+   <div class="loginbar">
+    <a href="#changlanguage"><img src="/pic/Group 3.png" width="90" height="25"alt="th/eng"></a>  
+ </div>
 </div>
-   <div class="row" style="float: right;">
+  
+   <div class="row" style="float: right;margin-right: auto;">
     <div class="col-auto">
       <div class="loginbar">
    <a href="#Register"style=><img src="/pic/Group 5.png" alt="Register"></a> 
@@ -51,15 +64,42 @@
   </div>
   </div>
 </div>
+</div> 
 </div>
 </div>
 </div>
+<div class="headerlogin">planveler</div>
+<div class="container" id="headloginpage">
+  <div class="row">
+      <div class="stupid-line"></div>
+  <div class="row">
+    <div class="login-logo"><img src="/pic/logo.png"></div>  <div class="stupid-line2"></div>
+  </div>
+  </div>
 </div>
 <div class="container">
-    
+  <div class="row">
+    <div class="col-lg-4">
+     <div class="content-4"> login with</div>
+    </div>
+    <div class="col-4">
+      <div class="stupid-line3"></div>
+    </div>
+    <div class="col-lg-4">
+      <div class="content-4">login your account</div><br>
+        <div class="loginbox">
+          <input type="email" class="form-control" id="emaillogin" placeholder="Email">
+          <input type="password" class="form-control" id="password" placeholder="Password">
+          <a href="#login"><div class="loginbtu">Login</div></a>
+          <a href="#forgot"><div class="optionpassword">forgot password  ?</div></a>
+          <a href="#forgot"><div class="optionpassword">create your account</div></a>
+        </div>
+       </div>
+    </div>
+  </div>
 </div>
-
-<div class="bot-bar"style="z-index:2;">
+<div class="stupid-line"></div>
+<div class="bot-bar"style="z-index:1;">
   <div class="container">
     <div class="row justify-content-center" style="margin-top:20px;">
       <div class="col-auto"style="font-family: 'MykidsHandwrittenRegular;'
@@ -81,7 +121,7 @@
         <div class="botbar-data">
         <h1>Planveler Policies</h1><p>
           <p><a href="Terms&Condition.html">Terms & Conditions</a> 
-            <p><p><a href="/Help.html">Help Center</a>
+            <p><a href="/Help.html">Help Center</a>
       </div>
     </div>
       <div class="col-auto">
@@ -94,9 +134,6 @@
       </div>
   </div>
 </div>
-</div>
-<div class="side-bg">
-  
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
