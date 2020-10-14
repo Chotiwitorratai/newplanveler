@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="/extentions/css/planveler.css">
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   body {
     background: url(/pic/bg3.png);
@@ -81,26 +82,42 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-4">
-     <div class="content-4"> login with</div>
-     <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fa fa-facebook" style="margin-right: 20px;"></i>  Sign in with Facebook</button>
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fa fa-google" style="color: red; font-size: 20px;margin-right: 30px;"></i> Sign in with Google</button>
+      <div class="registerinfomation">
+        <div class="content-4"style="font-weight:bold">General Information</div>
+
+       
+          <input type="text" class="form-control" id="userid" placeholder="Username" required>
+          <input type="email" class="form-control" id="emaillogin" placeholder="Email"required>
+          <input type="text" class="form-control" id="password" placeholder="Firstname"required>
+          <input type="text" class="form-control" id="password" placeholder="Lastname"required>
+          <input type="password" class="form-control" id="password" placeholder="Password"required>
+          <input type="password" class="form-control" id="password" placeholder="Confirm-password"required>
+
+      </div>
+              
     </div>
     <div class="col-4">
       <div class="stupid-line3"></div>
     </div>
     <div class="col-lg-4">
-      <div class="content-4">login your account</div><br>
-        <div class="loginbox">
-          <input type="email" class="form-control" id="emaillogin" placeholder="Email">
-          <input type="password" class="form-control" id="password" placeholder="Password">
-          <a href="#login"><div class="loginbtu">Login</div></a>
-          <a href="#forgot"><div class="optionpassword">forgot password  ?</div></a>
-          <a href="#forgot"><div class="optionpassword">create your account</div></a>
-        </div>
+      <div class="registerinfomation">
+        <div class="content-4"style="font-weight:bold">Contect Details</div>
+
+       
+        <input type="text" class="form-control" id="sex" placeholder="Gender" required>
+        <input type="text" class="form-control" id="job" placeholder="Job"required>
+        <input type="tel" class="form-control" id="tel" placeholder="Tel."required>
+        <input type="date" class="form-control" id="password" placeholder="Birthdate"required>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;">
+        I agree to the <a href="#" style="color:dodgerblue">Planveler Terms & Conditions</a>.
+        <div class="registerbtu"><a href="#submit">Regist</a></div>
+
+
+    </div>
        </div>
     </div>
+</div>
   </div>
-
 <div class="bot-bar"style="z-index:1;">
   <div class="container">
     <div class="row justify-content-center" style="margin-top:20px;">
