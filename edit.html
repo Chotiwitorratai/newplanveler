@@ -30,7 +30,7 @@
 
   
   <div style="position: absolute;bottom: 0px;">
-  <p><p><p></p><a href="Login.html">Login</a></p></div>
+  <p><p><p></p><a href="#">Login</a></p></div>
 </div>
 
 <div class="container">
@@ -46,15 +46,15 @@
  <div class="col-lg-2 col-md-2 col-lg-2 offset-lg-6 offset-9" style="padding-right:20px;">
   <div class="row" style="float: right;">
    <div class="loginbar">
-    
+    <a href="#changlanguage"><img src="/pic/Group 3.png" width="90" height="25"alt="th/eng"></a>  
  </div>
 </div>
   
    <div class="row" style="float: right;margin-right: auto;">
     <div class="col-auto">
       <div class="loginbar">
-   <a href="#Register"style=><img src="/pic/Group 5.png" alt="Register"></a> 
-   <a href="Login.html"style=><img src="/pic/Group 7.png" alt="Login"></a> 
+   <a href="/register.html"style=><img src="/pic/Group 5.png" alt="Register"></a> 
+   <a href="#Login"style=><img src="/pic/Group 7.png" alt="Login"></a> 
   </div>
   </div>
 </div>
@@ -62,68 +62,59 @@
 </div>
 </div>
 </div>
-<div class="container-fluid" id="backgroundimg">
-  <div class="headermainpage">planveler</div>
-  <div class="d-flex justify-content-center px-5">
-    <div class="search"> <input type="text" class="search-input" placeholder=" Search your place . . ." name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+<div class="header-trip"> <form action="/action_page.php"><input type="text" id="header-trip" placeholder="ตั้งชื่อทริป"></form></div>
+<div class="daytrip">
+    <br>Day<br>
+    <a href="#1">1</a><br>
+    <a href="#2">2</a><br>
+    <a href="#3">3</a>
 </div>
-</div>
-
-<div id="iconrecommend">
-  <div class="container">
-    <div class="row justify-content-center">
-  <img src="/pic/recommend.png" alt="iconrecommend">
-  </div>
-</div>
-</div>
-
-<div id="cardpic">
-<div class="card mb-4" style="max-width: 668px;max-height: 401px; border: 2px;
-padding: 10px;
-box-shadow: 1px 1px 2px #888888;
-">
-  <div class="row no-gutters">
-    <div class="col-md-7"style="padding:auto;">
-      <img src="/pic/reviwe1.png" class="card-img" alt="review">
+<div class="container justify-content-center tripblock" id="1">
+    <div class="day"><input type="text" name="date" placeholder="วันที่" style="float:left;"></div>
+    <div class="row">
+        
     </div>
-    <div class="col-md-5">
-      <div class="card-body">
-        <h5 class="card-title">กาญจนบุรี</h5>
-        <p class="card-text">กาญจนบุรี 3 วัน 2 คืน 4000บาท โดย taloktoktek</p>
-        <a href="#" class="stretched-link">เพิ่มเติม</a>
-      </div>
+    <div id= "edit-trip"style="display:none;">
+        <input type="button" value="นำออก" class="takeoutbtu"
+		onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
+    <div class="row">
+        
+        <div class="col">
+            <input type="text"  name="time" placeholder="เวลา"  >
+        </div>
+        <div class="col">
+                <div class="file-field addimgtrip">
+                    <div class="addimgtrip-text">เพิ่มรูปภาพ</div>
+                </div>
+                  </div>         
+        <div class="col">
+            <h1><input type="text"name="trip-place" placeholder="เพิ่มสถานที่" ></h1>
+            <textarea rows="4" cols="30" name="comment" form="usrform">
+                </textarea>
+        </div>
     </div>
-  </div>
-</div>
-  <div class="quote">
-    คุณค่าของการเดินทาง<br>
-    ไม่ได้วัดกันที่ "ระยะทาง" แต่วัดกันที่ "ความสุข"
-</div>
-</div>
-
-<div class="bigquote">
-<div class="container-fluid" >
-Travel&emsp;&emsp;--&emsp;&emsp;is&emsp;&emsp;--&emsp;&emsp;<font style="color: #61adf3">live</font>
-</div>
-</div>
-<div class="imgshow">
-  <table align="center" class="table-borderless">
-    <tr>
-      <th rowspan="3"><span class="bigimg"><img height="55%"  img-responsive src="/pic/show1.png" alt="img1"></span></th>
-      <div class="imgshow2">
-      <td ><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
-      <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
+    <div class="row detail">
+        <div class="col">
+        <img src="/pic/caricon.png" alt="">
+        <div class="stupid-linetrip"></div>
+        <span class="timetrip">
+            <input type="text" placeholder="เวลา">
+            
+        </span>
+        </div>
     </div>
-    </tr>
-    <tr>
-      <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
-      <td><img width="253px" height="167px" src="/pic/show2.png" alt="show2"></td>
-    </tr>
-  </table>
-</div>
-
+    </div>
+    
+    <form method="post" action="/cgi-bin/show_params.cgi">
+        <div id="writeroot"style="border:none;"></div>
+       
+        <input type="button" value="เพิ่ม" onclick="moreFields();" />
+        <input type="submit" value="Send form" />
+    </form>
+    <div class="row"></div>
+    </div>
 <div class="bot-bar"style="z-index:1;">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row justify-content-center" style="margin-top:20px;">
       <div class="col-auto"style="font-family: 'MykidsHandwrittenRegular;'
       !improtant;">
