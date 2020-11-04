@@ -268,20 +268,21 @@ font-family: 'ageo';
 }
 
 .stupid-line {
-  position: absolute;
+position:absolute;
 width: 40%;
 height: 0px;
 left: 3%;
-top: 250px;
+top: 50px;
 border: 0.1px solid #1C3C25;
 }
 
 .stupid-line2 {
   position: absolute;
-width: 40%;
+width: 42%;
 height: 0px;
-right: 3%;
-top: 250px;
+right: 2%;
+top: 50px;
+
 border: 0.1px solid #1C3C25;
 }
 .stupid-line3{
@@ -289,11 +290,14 @@ display: flex;
 position: absolute;
 width: 600px;
 height: 0px;
-top: 620px;
-left: 28.5%;
+top: 420px;
+left: 24%;
 border: 0.1px solid #1C3C25;
 transform: rotate(90deg);
+margin-bottom: 200px;
 }
+
+
 
 .stupid-linetrip{
 display: inline-block;
@@ -308,8 +312,9 @@ margin-top: 20px;
 position: absolute;
 width: 171px;
 height: 96px;
-left: 43%;
-top: 204px;
+left: 42.5%;
+top: 0px;
+z-index: 1;
 }
 
 .loginbox input {
@@ -390,6 +395,7 @@ color: white;
 
   height: 130px;
   width: 100%;
+  position: relative;
 }
 
 .search-icon:hover {
@@ -860,8 +866,8 @@ box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   
   .login-logo img{
     position: absolute;
-    left: 40%;
-    top: 204px;
+    left: 38%;
+    top: 0px;
     width: 171px;
     height:96px;
   }
