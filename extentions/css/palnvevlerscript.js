@@ -1,4 +1,5 @@
 
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
@@ -7,6 +8,7 @@ var currentScrollPos = window.pageYOffset;
   } else {
     document.getElementById("navbar").style.top = "-300px";
   }
+
   prevScrollpos = currentScrollPos;
 }
 function openNav(event) {
@@ -23,22 +25,77 @@ function closeNav() {
 }
 
 var counter = 0;
-
+var count = 0;
 function moreFields() {
-	counter++;
-	var newFields = document.getElementById('edit-trip').cloneNode(true);
-	newFields.id = 'writeroot';
-	newFields.style.display = 'block';
-	var newField = newFields.childNodes;
-	for (var i=0;i<newField.length;i++) {
-		var theName = newField[i].name
-		if (theName)
-			newField[i].name = theName + counter;
-	}
-	var insertHere = document.getElementById('writeroot');
-	insertHere.parentNode.insertBefore(newFields,insertHere);
+  counter++;
+  var newFields = document.getElementById('edit-trip').cloneNode(true);
+  newFields.id = 'writeroot';
+  newFields.style.display = 'block';
+  var newField = newFields.childNodes;
+  for (var i = 0; i < newField.length; i++) {
+      var theName = newField[i].name
+      if (theName)
+          newField[i].name = theName + counter;
+  }
+  var insertHere = document.getElementById('writeroot');
+  insertHere.parentNode.appendChild(newFields);
 }
 window.onload = moreFields;
+
+function moreDays() {
+  counter++;
+  var newFields = document.getElementById('dayinput').cloneNode(true);
+  newFields.id = 'writeroot';
+  newFields.style.display = 'block';
+  var newField = newFields.childNodes;
+  for (var i = 0; i < newField.length; i++) {
+      var theName = newField[i].name
+      if (theName)
+          newField[i].name = theName + counter;
+  }
+  var insertHere = document.getElementById('writeroot');
+  insertHere.parentNode.appendChild(newFields);
+  count++;
+  let days = document.createElement('dt');
+  days.innerHTML = count;
+  dayadd.appendChild(days);
+
+  }
+
+
+function removeHere() {
+  this.parentNode.parentNode.removeChild(this.parentNode);
+}
+$( "button#removebtn" ).click(function() {
+  $( "dt" ).remove();
+
+});
+
+
+
+var addButtons = document.querySelectorAll('.add button');
+
+function addText () {
+  var self = this;
+  var weekParent = self.parentNode.parentNode;
+  var textarea = self.parentNode.querySelector('textarea');
+  var value = textarea.value;
+  var item = document.createElement("dt");
+  var text = document.createTextNode(value);
+  item.appendChild(text)
+  weekParent.appendChild(item);
+}
+
+function removeText() {
+  var weekParent = this.parentNode.parentNode;
+  var item = weekParent.querySelector("p");
+  weekParent.removeChild(item);
+}
+
+for (i = 0; i < addButtons.length; i++) { 
+    var self = addButtons[i];
+    self.addEventListener("click", addText);
+}
 
 
 

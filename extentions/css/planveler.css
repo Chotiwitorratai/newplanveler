@@ -527,6 +527,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   line-height: 19px;
   text-align: center;
+  z-index: 1;
 }
 
 .daytrip a {
@@ -569,12 +570,14 @@ color: #646464;
   border: none;
   border-bottom: 1px solid;
   width: 50%;
+  font-size: 2vw;
 }
+
+
 
 #writeroot input{
   border: none;
   border-bottom: 1px solid;
-  width: 50%;
 }
 
 .takeoutbtu {
@@ -680,6 +683,10 @@ padding: 10px;
   display: block;
 
 }
+.btn-addform {
+  margin-bottom:50px;
+  padding : 10px;
+}
 
 .registerinfomation{
   display: inline-block;
@@ -755,7 +762,7 @@ box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   }
   #loginpage input {
     width: 80% ;
-    margin-left: 25%;
+    margin-left: 15% !important;
   }
   #loginpage .loginbtu {
     margin-left: 40%;
