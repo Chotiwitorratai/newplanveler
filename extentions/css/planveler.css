@@ -484,14 +484,15 @@ body {
 }
 
 .header-trip {
-    margin-top: 100px;
+    margin-top: 120px;
     font-style: normal;
     font-weight: normal;
-    font-size: 60px;
+    font-size: 5vw;
     line-height: 71px;
     text-align: center;
     color: #444444;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: none;
 }
 
 .header-trip input {
@@ -554,6 +555,12 @@ body {
     font-size: 2vw;
 }
 
+textarea {
+    font-size: 1vw !important;
+    float: left;
+    width: 100%;
+}
+
 .inputfile {
     width: 0.1px;
     height: 0.1px;
@@ -596,7 +603,7 @@ body {
 }
 
 .takeoutbtu {
-    width: 10% !important;
+    width: 13% !important;
     font-size: 1.5vw;
 }
 
