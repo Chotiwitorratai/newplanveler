@@ -1,10 +1,7 @@
-            body {
-    <<<<<<< HEAD background-color: white;
-    font-family: 'ageo_personal_uselight', 'Kanit', sans-serif;
-    =======background-color: white;
+body {
+    background-color: white;
     font-family: 'ageo_personal_uselight', 'Kanit', sans-serif;
     overflow: auto;
-    >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
 }
 
 @font-face {
@@ -44,43 +41,20 @@
 }
 
 .bot-bar {
-    <<<<<<< HEAD position: relative;
-    bottom: -182px;
+    position: relative;
+    margin-top: 182px;
     width: 100%;
-    height: 182px;
+    height: 107px;
     background: #1C3C25;
-    font-family: my_kids_handwrittenregular;
+    font-family: 'space_monoregular';
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 29px;
+    line-height: 16px;
     text-align: center;
     color: #FFFFFF;
 }
 
-.side-bg {
-    position: fixed;
-    width: 250px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    background: #445b47;
-}
-
-=======position: relative;
-bottom: -182px;
-width: 100%;
-height: 107px;
-background: #1C3C25;
-font-family: 'space_monoregular';
-font-style: normal;
-font-weight: normal;
-line-height: 16px;
-text-align: center;
-color: #FFFFFF;
-
-}
->>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd #navbar {
+#navbar {
     background-color: #FFFFFF;
     position: fixed;
     top: 0;
@@ -90,6 +64,7 @@ color: #FFFFFF;
     transition: top 0.3s;
     z-index: 3;
 }
+
 #navbar a {
     float: right;
     display: block;
@@ -100,6 +75,7 @@ color: #FFFFFF;
     font-size: 14px;
     color: #fc9885;
 }
+
 #navbar span {
     float: left;
     display: inline-block;
@@ -111,6 +87,7 @@ color: #FFFFFF;
     overflow: hidden;
     position: relative;
 }
+
 #navbar span.icon {
     float: left;
     display: inline-block;
@@ -121,10 +98,12 @@ color: #FFFFFF;
     overflow: hidden;
     position: relative;
 }
+
 #navbar a:hover {
     background-color: #ddd;
     color: black;
 }
+
 .botbar-data {
     font-size: 14px;
     font-weight: 400;
@@ -132,22 +111,27 @@ color: #FFFFFF;
     padding-top: -5px;
     line-height: 0.75;
 }
+
 .botbar-data h1 {
     font-size: 14px;
     line-height: 0.25;
 }
+
 .botbar-data a:visited {
     color: #8E8E8E;
     text-decoration: none;
 }
+
 .botbar-data a:hover {
     text-decoration: underline;
     color: #8E8E8E;
 }
+
 .botbar-data a {
     color: #8E8E8E;
     text-decoration: none;
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -160,6 +144,7 @@ color: #FFFFFF;
     transition: 0.5s;
     padding-top: 60px;
 }
+
 .sidenav a {
     padding-block: 8px 8px 8px 32px;
     margin: 30px 16px;
@@ -174,9 +159,11 @@ color: #FFFFFF;
     background: #A5B59C;
     text-align: center;
 }
+
 .sidenav a:hover {
     color: #f1f1f1;
 }
+
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -184,17 +171,18 @@ color: #FFFFFF;
     font-size: 36px;
     margin-left: 50px;
 }
+
 #main {
     transition: margin-left 0.8s;
     padding: 15px;
 }
+
 #backgroundimg {
     position: relative;
     width: 100%;
     height: 100%;
     left: 0px;
     top: 0px;
-    box-sizing: content-box;
     display: block;
     background-image: url(/pic/background01.png);
     background-repeat: no-repeat;
@@ -202,6 +190,7 @@ color: #FFFFFF;
     background-size: cover;
     font-family: 'ageo';
 }
+
 .headermainpage {
     font-family: 'space_monoregular';
     font-size: 60px;
@@ -210,6 +199,7 @@ color: #FFFFFF;
     text-align: center;
     letter-spacing: 10px;
 }
+
 .headerlogin {
     font-family: 'space_monoregular';
     font-size: 60px;
@@ -218,6 +208,7 @@ color: #FFFFFF;
     text-align: center;
     letter-spacing: 3px;
 }
+
 .search {
     width: 787px;
     margin-top: 100px;
@@ -225,6 +216,7 @@ color: #FFFFFF;
     background-color: #fff;
     border-radius: 5px
 }
+
 .search-input {
     color: white;
     border: 0;
@@ -236,6 +228,7 @@ color: #FFFFFF;
     line-height: 80px;
     transition: width 0.4s linear
 }
+
 .search .search-input {
     padding: 0 10px;
     width: 100%;
@@ -245,6 +238,7 @@ color: #FFFFFF;
     color: black;
     transition: width 0.4s linear
 }
+
 .search-icon {
     height: 80px;
     width: 130px;
@@ -259,33 +253,37 @@ color: #FFFFFF;
     position: relative;
     border-radius: 5px
 }
+
 .stupid-line {
     position: absolute;
     width: 40%;
     height: 0px;
     left: 3%;
-    top: 250px;
+    top: 50px;
     border: 0.1px solid #1C3C25;
 }
+
 .stupid-line2 {
     position: absolute;
-    width: 40%;
+    width: 42%;
     height: 0px;
-    right: 3%;
-    top: 250px;
+    right: 2%;
+    top: 50px;
     border: 0.1px solid #1C3C25;
 }
+
 .stupid-line3 {
     display: flex;
-    float: left;
     position: absolute;
     width: 600px;
     height: 0px;
-    top: 620px;
-    margin-left: 32%;
+    top: 420px;
+    left: 24%;
     border: 0.1px solid #1C3C25;
     transform: rotate(90deg);
+    margin-bottom: 200px;
 }
+
 .stupid-linetrip {
     display: inline-block;
     width: 150px;
@@ -294,13 +292,16 @@ color: #FFFFFF;
     transform: rotate(90deg);
     margin-top: 20px;
 }
+
 .login-logo img {
     position: absolute;
     width: 171px;
     height: 96px;
-    left: 43%;
-    top: 204px;
+    left: 42.5%;
+    top: 0px;
+    z-index: 1;
 }
+
 .loginbox input {
     background-color: rgba(4, 134, 253, 0.5);
     color: rgba(0, 0, 0, 0.2);
@@ -313,6 +314,7 @@ color: #FFFFFF;
     width: 347px;
     height: 42.9px;
 }
+
 .registerinfomation input {
     background-color: rgba(4, 134, 253, 0.5);
     color: rgba(0, 0, 0, 0.2);
@@ -325,6 +327,7 @@ color: #FFFFFF;
     width: 347px;
     height: 42.9px;
 }
+
 .loginbtu {
     margin-left: 37%;
     margin-top: 60px;
@@ -339,6 +342,7 @@ color: #FFFFFF;
     text-align: center;
     color: white;
 }
+
 .registerbtu {
     width: 139px;
     height: 51px;
@@ -352,12 +356,15 @@ color: #FFFFFF;
     text-align: center;
     color: white;
 }
+
 .registerbtu a:hover {
     color: white;
 }
+
 .registerbtu a:link {
     color: white;
 }
+
 .optionpassword {
     margin-top: 10px;
     font-style: normal;
@@ -368,29 +375,37 @@ color: #FFFFFF;
     text-align: center;
     color: rgba(5, 0, 255, 0.5);
 }
+
 #headloginpage {
     height: 130px;
     width: 100%;
+    position: relative;
 }
+
 .search-icon:hover {
     color: #fff !important
 }
+
 #cardpic {
     margin: 150px;
 }
+
 #iconrecommend {
     padding: 20px;
 }
+
 .card-body a {
     position: absolute;
     bottom: 10px;
     right: 5px;
 }
+
 .quote {
     float: right;
     margin-right: 30px;
     font-size: 18px;
 }
+
 .bigquote {
     width: 100%;
     font-family: 'space_monoregular';
@@ -404,23 +419,25 @@ color: #FFFFFF;
     padding: 65px;
     color: #3c3c3c;
 }
+
 .imgshow {
-    <<<<<<< HEAD margin-top: 150px;
-    margin-left: 10%;
-    =======margin-top: 150px;
+    margin-top: 150px;
 }
+
 .imgshow2 {
     overflow: hidden;
-    >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
 }
+
 .content {
     margin-bottom: 300px;
     margin-left: 10%;
     margin-right: 10%;
 }
+
 #rightshowimg {
     padding-left: 100px;
 }
+
 .content-1 {
     font-family: 'Kanit';
     font-style: normal;
@@ -429,6 +446,7 @@ color: #FFFFFF;
     line-height: 23px;
     color: #000000;
 }
+
 .content-2 {
     font-family: 'Kanit';
     font-style: normal;
@@ -437,6 +455,7 @@ color: #FFFFFF;
     line-height: 21px;
     color: #5A5A5A;
 }
+
 .content-3 {
     font-family: 'Kanit';
     font-style: normal;
@@ -445,6 +464,7 @@ color: #FFFFFF;
     line-height: 29px;
     color: #5A5A5A;
 }
+
 .content-4 {
     font-family: 'Kanit';
     font-weight: normal;
@@ -453,15 +473,18 @@ color: #FFFFFF;
     text-align: center;
     color: rgba(77, 53, 49, 0.71);
 }
+
 .loginbar {
     margin-top: 10px;
 }
+
 .header-website {
     font-size: 65px;
     color: #1c3c25;
 }
+
 .header-trip {
-    <<<<<<< HEAD margin-top: 100px;
+    margin-top: 100px;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -469,19 +492,12 @@ color: #FFFFFF;
     text-align: center;
     color: #444444;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    =======margin-top: 100px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 71px;
-    text-align: center;
-    color: #444444;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
 }
+
 .header-trip input {
     text-align: center;
 }
+
 .daytrip {
     position: sticky;
     left: 49px;
@@ -493,92 +509,131 @@ color: #FFFFFF;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    z-index: 1;
 }
+
 .daytrip a {
     text-decoration-line: underline;
     color: #646464;
 }
+
 .daytrip a:hover {
     color: #646464;
 }
+
 .tripblock {
-    <<<<<<< HEAD font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #646464;
-    =======font-weight: normal;
+    font-weight: normal;
     font-size: 2vw;
     line-height: 24px;
     text-align: center;
     color: #646464;
-    >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
 }
+
 .tripblock .row {
     margin-bottom: 50px;
 }
+
 .timetrip {
-    <<<<<<< HEAD font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    width: 60px;
-    height: 14px;
-    color: #646464;
-    =======font-style: normal;
+    font-style: normal;
     font-weight: normal;
     font-size: 1vw;
     line-height: 14px;
     width: 60px;
     height: 14px;
     color: #646464;
-    >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
 }
+
 .timetrip input {
     width: 60px !important;
 }
+
 #edit-trip input {
     border: none;
     border-bottom: 1px solid;
     width: 50%;
+    font-size: 2vw;
 }
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    margin-top: 30px !important;
+    font-size: 0.5em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.inputfile:focus+label,
+.inputfile+label:hover {
+    background-color: red;
+}
+
+.inputfile:focus+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.triptime input {
+    width: 5vw;
+    font-size: 1.5vw;
+    overflow: auto;
+}
+
 #writeroot input {
     border: none;
     border-bottom: 1px solid;
-    width: 50%;
 }
+
 .takeoutbtu {
     width: 10% !important;
     font-size: 1.5vw;
 }
+
 .addimgtrip {
     width: 100%;
     height: 157px;
     background: #F4F1F1;
     border-radius: 10px;
 }
+
 .addimgtrip-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .detail {
     line-height: 100px;
 }
+
 .emp-profile {
     padding: 3%;
     margin-top: 200px;
     margin-bottom: 3%;
     border-radius: 0.5rem;
 }
+
 .profile-img {
     text-align: center;
 }
+
 .profile-img img {
     width: 180px;
     height: 183px;
 }
+
 .profile-img .file {
     position: relative;
     overflow: hidden;
@@ -589,12 +644,14 @@ color: #FFFFFF;
     font-size: 15px;
     background: #212529b8;
 }
+
 .profile-img .file input {
     position: absolute;
     opacity: 0;
     right: 0;
     top: 0;
 }
+
 .profile-edit-btn {
     margin-top: 20px;
     border: none;
@@ -605,27 +662,33 @@ color: #FFFFFF;
     color: #6c757d;
     cursor: pointer;
 }
+
 .content-2 a {
     text-decoration: none;
     color: #454545;
     font-size: 14 px;
     line-height: 29px;
 }
+
 .profile-tab p {
     color: #B19999;
 }
+
 #myTabContent {
     margin-top: -120px;
     padding: 5px;
 }
+
 #myTabContent .row {
     border-bottom: 1px solid #454545;
     padding: 10px;
 }
+
 .btn-google {
     color: #878787;
     background-color: white;
 }
+
 .btn-facebook {
     color: white;
     background-color: #3b5998;
@@ -633,6 +696,12 @@ color: #FFFFFF;
     margin-bottom: 40px;
     display: block;
 }
+
+.btn-addform {
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
 .registerinfomation {
     display: inline-block;
     margin-left: 15%;
@@ -642,20 +711,22 @@ color: #FFFFFF;
     background: #FFFFFF;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
+
 @media screen and (max-height: 600px) {
     .sidenav {
         padding-top: 15px;
     }
-    
     .sidenav a {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width: 500px) {
     .login-logo img {
         margin-left: -6%;
     }
 }
+
 @media screen and (max-width: 700px) {
     .header-website {
         position: relative;
@@ -663,458 +734,275 @@ color: #FFFFFF;
         left: -100px;
         font-size: 30px;
     }
-    
     .registerinfomation {
         display: block;
         margin-left: 10%;
     }
-    
     .stupid-line {
         width: 35%;
     }
-    
     .stupid-line2 {
         width: 35%;
     }
 }
+
 @media screen and (max-width: 572px) {
     .registerinfomation {
         margin-left: -2%;
         width: 500px;
     }
 }
+
 @media screen and (max-width: 768px) {
-    <<<<<<< HEAD .side-bg {
+    .side-bg {
         display: none;
     }
-    
     .loginbar {
         display: none;
     }
-    
     .icon {
         position: absolute;
         top: 0;
         margin-left: 20vw;
     }
-    
     .header-website {
         position: relative;
         display: block;
         left: -100px;
         font-size: 35px;
     }
-    
     .data-slide #container {
-        box-sizing: border-box;
         height: 5vw;
         display: inline-block;
         width: 100%;
         height: 360px;
         left: -50px;
     }
-    
     .inside {
         margin-left: -250px;
     }
-    
     #loginpage input {
         width: 80%;
-        margin-left: 25%;
+        margin-left: 15% !important;
     }
-    
     #loginpage .loginbtu {
         margin-left: 40%;
     }
-    
     .registerinfomation {
         margin-left: 15% !important;
     }
-    
     #loginpage .optionpassword {
         margin-left: 0px !important;
-        =======.side-bg {
-            display: none;
-        }
-        .loginbar {
-            display: none;
-        }
-        .icon {
-            position: absolute;
-            top: 0;
-            margin-left: 20vw;
-        }
-        .header-website {
-            position: relative;
-            display: block;
-            left: -100px;
-            font-size: 35px;
-        }
-        .data-slide #container {
-            height: 5vw;
-            display: inline-block;
-            width: 100%;
-            height: 360px;
-            left: -50px;
-        }
-        .inside {
-            margin-left: -250px;
-        }
-        #loginpage input {
-            width: 80%;
-            margin-left: 25%;
-        }
-        #loginpage .loginbtu {
-            margin-left: 40%;
-        }
-        .registerinfomation {
-            margin-left: 15% !important;
-        }
-        #loginpage .optionpassword {
-            margin-left: 0px !important;
-        }
     }
-    
-    @media screen and (max-width: 509px) {
-        .registerinfomation .content-4 {
-            font-size: 20px;
-        }
-        .registerinfomation input {
-            margin-top: 15px;
-            margin-left: 10%;
-            backdrop-filter: blur(4px);
-            mix-blend-mode: normal;
-            border-radius: 15px;
-            align-items: center;
-            width: 250px;
-            height: 30px;
-        }
-        .registerinfomation {
-            width: 320px;
-            height: 340px;
-            margin-left: 15%;
-        }
-        .registerbtu {
-            width: 80px;
-            height: 31px;
-            margin-left: 39%;
-            margin-top: 10px;
-            border-radius: 18px;
-            font-style: normal;
-            font-size: 16px;
-            line-height: 30px;
-            text-align: center;
-            >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
-        }
+}
+
+@media screen and (max-width: 509px) {
+    .registerinfomation .content-4 {
+        font-size: 20px;
     }
-    
-    @media screen and (max-width: 509px) {
-        .registerinfomation .content-4 {
-            font-size: 20px;
-        }
-        .registerinfomation input {
-            margin-top: 15px;
-            margin-left: 10%;
-            backdrop-filter: blur(4px);
-            mix-blend-mode: normal;
-            border-radius: 15px;
-            align-items: center;
-            width: 250px;
-            height: 30px;
-        }
-        .registerinfomation {
-            width: 320px;
-            height: 340px;
-            margin-left: 15%;
-        }
-        .registerbtu {
-            width: 80px;
-            height: 31px;
-            margin-left: 39%;
-            margin-top: 10px;
-            border-radius: 18px;
-            font-style: normal;
-            font-size: 16px;
-            line-height: 30px;
-            text-align: center;
-        }
+    .registerinfomation input {
+        margin-top: 15px;
+        margin-left: 10%;
+        backdrop-filter: blur(4px);
+        mix-blend-mode: normal;
+        border-radius: 15px;
+        align-items: center;
+        width: 250px;
+        height: 30px;
     }
-    
-    @media screen and (max-width: 1919px) {
-        .loginbar {
-            position: relative;
-            right: -300px;
-        }
+    .registerinfomation {
+        width: 320px;
+        height: 340px;
+        margin-left: 15%;
     }
-    
-    @media screen and (max-width: 1627px) {
-        .loginbar {
-            position: relative;
-            right: -250px;
-        }
+    .registerbtu {
+        width: 80px;
+        height: 31px;
+        margin-left: 39%;
+        margin-top: 10px;
+        border-radius: 18px;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
     }
-    
-    @media screen and (max-width: 1469px) {
-        .loginbar {
-            position: relative;
-            right: -180px;
-        }
+}
+
+@media screen and (max-width: 1919px) {
+    .loginbar {
+        position: relative;
+        right: -300px;
     }
-    
-    <<<<<<< HEAD @media screen and (max-width: 1334px) {
-        .loginbar {
-            position: relative;
-            right: -140px;
-            top: 0px;
-        }
-        .bigquote {
-            font-size: 30px;
-        }
+}
+
+@media screen and (max-width: 1627px) {
+    .loginbar {
+        position: relative;
+        right: -250px;
     }
-    
-    @media screen and (max-width: 1188px) {
-        .loginbar {
-            position: relative;
-            right: -35px;
-            top: 0px;
-        }
-        .stupid-line3 {
-            margin-left: -2.6%;
-        }
-        =======@media screen and (max-width: 1188px) {
-            .loginbar {
-                position: relative;
-                right: -35px;
-                top: 0px;
-            }
-            .stupid-line3 {
-                margin-left: -2.6%;
-            }
-        }
-        @media screen and (max-width: 1024px) {
-            .stupid-line3 {
-                margin-left: -6%;
-            }
-            .registerinfomation {
-                margin-left: 2%;
-            }
-            .bigimg {
-                display: block;
-            }
-        }
-        @media screen and (max-width: 991px) {
-            .loginbar {
-                position: relative;
-                right: 18px;
-                top: 0px;
-            }
-            .stupid-line3 {
-                display: none;
-            }
-            .login-logo img {
-                position: absolute;
-                left: 40%;
-                top: 204px;
-                width: 171px;
-                height: 96px;
-            }
-            .registerinfomation {
-                margin-bottom: 100px;
-                margin-left: 22.5%;
-            }
-            #loginpage .content-4 {
-                margin-top: 100px;
-            }
-            #loginpage input {
-                margin-left: 24%;
-            }
-            #loginpage .optionpassword {
-                margin-left: -6%;
-            }
-        }
-        @media screen and (max-width: 626px) {
-            .bot-bar {
-                height: 180px;
-                display: inline-block;
-                width: 105%;
-            }
-        }
-        @media screen and (max-width: 450px) {
-            .card-text {
-                font-size: 12px;
-            }
-            .card-title {
-                font-size: 12px;
-            }
-            .quote {
-                font-size: 12px;
-                margin: -30px;
-                margin-top: 30px;
-            }
-            .bigquote {
-                font-size: 24px;
-            }
-            .card {
-                width: 300px;
-                margin-left: -90px;
-            }
-            .bigimg {
-                display: none;
-                margin-right: 20%;
-            }
-            .imgshow {
-                margin-left: -10px;
-            }
-            .search .search-input {
-                font-size: 15px;
-                margin-top: 0px;
-                line-height: 50px;
-            }
-            .search {
-                height: 49px;
-            }
-            .search-icon {
-                font-size: 15px;
-                height: 50px;
-                width: 90px;
-                margin-top: 35px;
-            }
-            .headermainpage {
-                font-size: 35px;
-            }
-            >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
-        }
-        @media screen and (max-width: 1024px) {
-            .stupid-line3 {
-                margin-left: -6%;
-            }
-            .registerinfomation {
-                margin-left: 2%;
-            }
-        }
-        @media screen and (max-width: 991px) {
-            .loginbar {
-                position: relative;
-                right: 18px;
-                top: 0px;
-            }
-            .stupid-line3 {
-                display: none;
-            }
-            .bot-bar {
-                height: 320px;
-                display: inline-block;
-            }
-            .login-logo img {
-                position: absolute;
-                left: 40%;
-                top: 204px;
-                width: 171px;
-                height: 96px;
-            }
-            .registerinfomation {
-                margin-bottom: 100px;
-                margin-left: 22.5%;
-            }
-            #loginpage .content-4 {
-                margin-top: 100px;
-            }
-            #loginpage input {
-                margin-left: 24%;
-            }
-            #loginpage .optionpassword {
-                margin-left: -6%;
-            }
-        }
-        @media screen and (max-width: 450px) {
-            .card-text {
-                font-size: 12px;
-            }
-            .card-title {
-                font-size: 12px;
-            }
-            .quote {
-                font-size: 12px;
-                margin: -30px;
-                margin-top: 30px;
-            }
-            .bigquote {
-                font-size: 24px;
-            }
-            .bot-bar {
-                font-size: 15px;
-                line-height: 20px;
-            }
-            .bot-bar h1 {
-                font-size: 20px;
-            }
-            .card {
-                width: 300px;
-                margin-left: -90px;
-            }
-            .bigimg {
-                display: none;
-            }
-            .imgshow {
-                margin-left: -10px;
-            }
-            .search .search-input {
-                font-size: 15px;
-                margin-top: 0px;
-                line-height: 50px;
-            }
-            .search {
-                height: 49px;
-            }
-            .search-icon {
-                font-size: 15px;
-                height: 50px;
-                width: 90px;
-                margin-top: 35px;
-            }
-        }
-        @media screen and (max-width: 390px) {
-            #loginpage input {
-                width: 80%;
-                margin-left: 10%;
-            }
-            #loginpage .loginbtu {
-                width: 80px;
-                height: 31px;
-                margin-left: 39%;
-                margin-top: 15px;
-                border-radius: 18px;
-                font-style: normal;
-                font-size: 16px;
-                line-height: 30px;
-                text-align: center;
-            }
-            .login-logo img {
-                margin-left: -40px;
-            }
-            .registerinfomation {
-                margin-left: 4% !important;
-            }
-            .headerlogin {
-                font-size: 50px;
-            }
-        }
-        <<<<<<< HEAD @media screen and (max-width: 356px) {
-            .registerinfomation {
-                margin-left: -3.5% !important;
-            }
-            =======@media screen and (max-width: 356px) {
-                .registerinfomation {
-                    margin-left: -3.5% !important;
-                }
-                #cardpic {
-                    margin: 100px !important;
-                }
-                >>>>>>>d98b542c2040ecf28c8e216a1365c1f29ec799cd
-            }
-            @media screen and (max-width: 326px) {
-                .icon img {
-                    width: 130px;
-                    height: 77px;
-                }
-            }
+}
+
+@media screen and (max-width: 1469px) {
+    .loginbar {
+        position: relative;
+        right: -180px;
+    }
+}
+
+@media screen and (max-width: 1334px) {
+    .loginbar {
+        position: relative;
+        right: -140px;
+        top: 0px;
+    }
+    .bigquote {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1188px) {
+    .loginbar {
+        position: relative;
+        right: -35px;
+        top: 0px;
+    }
+    .stupid-line3 {
+        margin-left: -3.2%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .registerinfomation {
+        margin-left: 2%;
+    }
+    .bigimg {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .loginbar {
+        position: relative;
+        right: 18px;
+        top: 0px;
+    }
+    .stupid-line3 {
+        display: none;
+    }
+    .login-logo img {
+        position: absolute;
+        left: 38%;
+        top: 0px;
+        width: 171px;
+        height: 96px;
+    }
+    .registerinfomation {
+        margin-bottom: 100px;
+        margin-left: 22.5%;
+    }
+    #loginpage .content-4 {
+        margin-top: 100px;
+    }
+    #loginpage input {
+        margin-left: 24%;
+    }
+    #loginpage .optionpassword {
+        margin-left: -6%;
+    }
+}
+
+@media screen and (max-width: 626px) {
+    .bot-bar {
+        height: 180px;
+        display: inline-block;
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card-text {
+        font-size: 12px;
+    }
+    .card-title {
+        font-size: 12px;
+    }
+    .quote {
+        font-size: 12px;
+        margin: -30px;
+        margin-top: 30px;
+    }
+    .bigquote {
+        font-size: 24px;
+    }
+    .card {
+        width: 300px;
+        margin-left: -90px;
+    }
+    .bigimg {
+        display: none;
+        margin-right: 20%;
+    }
+    .imgshow {
+        margin-left: -10px;
+    }
+    .search .search-input {
+        font-size: 15px;
+        margin-top: 0px;
+        line-height: 50px;
+    }
+    .search {
+        height: 49px;
+    }
+    .search-icon {
+        font-size: 15px;
+        height: 50px;
+        width: 90px;
+        margin-top: 35px;
+    }
+    .headermainpage {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #loginpage input {
+        width: 80%;
+        margin-left: 10%;
+    }
+    #loginpage .loginbtu {
+        width: 80px;
+        height: 31px;
+        margin-left: 39%;
+        margin-top: 15px;
+        border-radius: 18px;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .login-logo img {
+        margin-left: -40px;
+    }
+    .registerinfomation {
+        margin-left: 4% !important;
+    }
+    .headerlogin {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .registerinfomation {
+        margin-left: -3.5% !important;
+    }
+    #cardpic {
+        margin: 100px !important;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    .icon img {
+        width: 130px;
+        height: 77px;
+    }
+}

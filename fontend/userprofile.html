@@ -22,20 +22,21 @@
 
 <body onclick="closeNav()">
   <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="mainpage.html"><img src="/pic/Group 10.png"></a>
-    <a href="mainpage.html"><img src="/pic/mytrip.png"></a>
-    <a href="#"><img src="/pic/Group 11.png"></a>
-    <a href="#"><img src="/pic/Group 12.png"></a>
-    <a href="#"><img src="/pic/Group 13.png"></a>
-    <a href="/planveler.html"><img src="/pic/Group 14.png"></a>
-    <a href="#"><img src="/pic/Group 15.png"></a>
-    <a href="#"><img src="/pic/Group 16.png"></a>
+    <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
+    <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
+    
+    <a href="mainpage.html">หน้าหลัก</a>
+    <a href="mainpage.html">ทริปของฉัน</a>
+    <a href="mainpage.html">รายการที่บันทึก</a>
+    <a href="mainpage.html">รายการทริปที่แนะนำ</a>
+    <a href="mainpage.html">แนะนำการใช้งาน</a>
+    <a href="mainpage.html">เกี่ยวกับเรา</a>
+    <a href="mainpage.html">คำถามที่พบบ่อย</a>
+    <a href="mainpage.html">ติดต่อเรา</a>
+  
+    
     <div style="position: absolute;bottom: 0px;">
-      <p>
-      <p>
-      <p></p><a href="#"><img src="/pic/Group 17.png"></a></p>
-    </div>
+    <p><p><p></p><a href="Login.html">Login</a></p></div>
   </div>
 
   <div class="container">
@@ -50,7 +51,6 @@
         <div class="col-lg-2 col-md-2 col-lg-2 offset-lg-6 offset-9" style="padding-right:20px;">
           <div class="row" style="float: right;">
             <div class="loginbar">
-              <a href="#changlanguage"><img src="/pic/Group 3.png" width="90" height="25" alt="th/eng"></a>
             </div>
           </div>
           <div class="row" style="float: right;">
@@ -75,14 +75,13 @@
               alt="" />
             <div class="file btn btn-lg btn-primary">
               Change Photo
-              <div><input type="file" name="file" ></div>
-              
+              <input type="file" name="file" />
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="content-3">
-           ที่อยู่
+            ข้อมูลส่วนตัว
           </div>
         </div>
       </div>
@@ -111,10 +110,10 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <label>ชื่อ-นามสกุล</label>
+                  <label>Email</label>
                 </div>
                 <div class="col-md-6">
-                  <p>123 456 7890</p>
+                  <p>Kshiti Ghelani</p>
                 </div>
               </div>
               <div class="row">
@@ -125,13 +124,36 @@
                   <p>09000059880</p>
                 </div>
               </div>
-           
               <div class="row">
                 <div class="col-md-6">
-                  <label>ที่อยู่</label>
+                  <label>ชื่อ-นามสกุล</label>
                 </div>
                 <div class="col-md-6">
-                  <p><input type="text" class="form-control" id="name" required></form></p>
+                  <p>123 456 7890</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>เพศ</label>
+                </div>
+                <div class="col-md-6">
+                  <p>Web Developer and Designer</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>วันเกิด</label>
+                </div>
+                <div class="col-md-6">
+                  <p>123 456 7890</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label>อาชีพ</label>
+                </div>
+                <div class="col-md-6">
+                  <p>123 456 7890</p>
                 </div>
               </div>
             </div>
@@ -139,14 +161,14 @@
         </div>
       </div>
       <div class="col-xl-2 offset-xl-10">
-       <a href="userprofileedit.html"><div class="profile-edit-btn">Save</div></a>  
+        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
       </div>
     </form>
   </div>
   <div class="bot-bar" style="z-index:2;">
     <div class="container">
       <div class="row justify-content-center" style="margin-top:20px;">
-        <div class="col-auto">
+        <div class="col-auto" style="font-family: 'MykidsHandwrittenRegular;'">
           <div class="botbar-data">
             <h1>About us</h1>
             <p>

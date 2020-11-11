@@ -1,4 +1,5 @@
 <html>
+<!-- miwwee  -->
 
 <head>
     <title>Planveler</title>
@@ -13,14 +14,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/extentions/css/planveler.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            background: url(/pic/bg3.png);
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
 </head>
 
 <body onclick="closeNav()">
@@ -44,7 +37,7 @@
                     <p></p><a href="#">Login</a></p>
         </div>
     </div>
-    <div class="stupid-line3"></div>
+
     <div class="container">
         <div class="row">
             <div id="navbar">
@@ -58,14 +51,13 @@
                 <div class="col-lg-2 col-md-2 col-lg-2 offset-lg-6 offset-9" style="padding-right:20px;">
                     <div class="row" style="float: right;">
                         <div class="loginbar">
-                            <a href="#changlanguage"><img src="/pic/Group 3.png" width="90" height="25" alt="th/eng"></a>
                         </div>
                     </div>
 
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a href="#Register" style=><img src="/pic/Group 5.png" alt="Register"></a>
+                                <a href="/register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
                                 <a href="#Login" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
@@ -74,53 +66,81 @@
             </div>
         </div>
     </div>
-    <div class="headerlogin">planveler</div>
-    <div class="container" id="headloginpage">
+    <div class="header-trip">
+        <form action="/action_page.php"><input type="text" id="header-trip" placeholder="ตั้งชื่อทริป"></form>
+    </div>
+    <div class="daytrip">
+        <br>Day<br>
+        <br>
+        <a href="#1">
+            <div id="dayadd"><br></div>
+        </a>
+        <input type="button" value="เพิ่มวัน" onclick="moreDays();">
+        <input type="button" id="removebtn" value="นำออก" onclick="removeHere();">
+        <br>
+
+    </div>
+    <div class="container justify-content-center tripblock" id="1 tripblock">
         <div class="row">
-            <div class="stupid-line"></div>
+            <div class="day" id="dayinput" style="float:left;display:none;">
+                <input type="button" value="นำออก" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">
+                <input type="text" name="date" placeholder="วันที่"></div>
+        </div>
+
+        <div class="row">
+
+        </div>
+        <div id="edit-trip" style="display:none;">
+            <input type="button" value="นำออก" class="takeoutbtu" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
             <div class="row">
-                <div class="login-logo"><img src="/pic/logo.png"></div>
-                <div class="stupid-line2"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-lg-5 justify-content-center">
-                <div class="registerinfomation">
-                    <div class="content-4" style="font-weight:bold">General Information</div>
-                    <input type="text" class="form-control" id="userid" placeholder="Username" required>
-                    <input type="email" class="form-control" id="emaillogin" placeholder="Email" required>
-                    <input type="text" class="form-control" id="password" placeholder="Firstname" required>
-                    <input type="text" class="form-control" id="password" placeholder="Lastname" required>
-                    <input type="password" class="form-control" id="password" placeholder="Password" required>
-                    <input type="password" class="form-control" id="password" placeholder="Confirm-password" required>
+                <div></div>
+                <div class="col-2">
+                    <div class="triptime">
+                        <input type="text" id="time" name="time" placeholder="เวลา">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="addimgtrip">
+                        <div class="addimgtrip-text">เพิ่มรูปภาพ
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file">Choose a file</label>
+                        </div><br>
+
+                    </div>
 
                 </div>
-
+                <div class="col-4">
+                    <input type="text" name="trip-place" placeholder="เพิ่มสถานที่">
+                    <textarea rows="4" cols="auto" name="comment" form="usrform">
+                </textarea>
+                </div>
             </div>
-            <div class="col justify-content-between">
-
-            </div>
-            <div class="col-lg-6">
-                <div class="registerinfomation">
-                    <div class="content-4" style="font-weight:bold">Contect Details</div>
-                    <input type="text" class="form-control" id="sex" placeholder="Gender" required>
-                    <input type="text" class="form-control" id="job" placeholder="Job" required>
-                    <input type="tel" class="form-control" id="tel" placeholder="Tel." required>
-                    <input type="date" class="form-control" id="password" placeholder="Birthdate" required>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;height:10px;width: 10px;"> I agree to the <a href="#" style="color:dodgerblue">Planveler Terms & Conditions</a>.
-                    <div class="registerbtu"><a href="#submit">Regist</a></div>
+            <div class="row detail">
+                <div class="col">
+                    <img src="/pic/caricon.png" alt="">
+                    <div class="stupid-linetrip"></div>
+                    <span class="timetrip">
+            <input type="text" placeholder="เวลา">
+            
+        </span>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
 
+        <form method="post" action="/cgi-bin/show_params.cgi">
+            <div id="writeroot" style="border:none;"><br></div>
+
+            <div class="row"></div>
+            <div class="btn-addform">
+                <input type="button" value="เพิ่ม" onclick="moreFields();" />
+                <input type="submit" value="Send form" />
+            </div>
+        </form>
+    </div>
     <div class="bot-bar" style="z-index:1;">
         <div class="container">
             <div class="row justify-content-center" style="margin-top:20px;">
-                <div class="col-auto" style="font-family: 'MykidsHandwrittenRegular''">
+                <div class="col-auto">
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
