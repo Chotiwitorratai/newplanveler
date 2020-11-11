@@ -97,6 +97,8 @@ for (i = 0; i < addButtons.length; i++) {
     self.addEventListener("click", addText);
 }
 
-
-
-
+function HandleBrowseClick(hidden_input_image)
+{
+    var fileinputElement = document.getElementById(hidden_input_image);
+    fileinputElement.click();
+} 

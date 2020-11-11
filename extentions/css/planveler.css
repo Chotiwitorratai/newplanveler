@@ -658,6 +658,15 @@ border-radius: 10px;
   color: #B19999;
 }
 
+.iconbutton {
+  
+}
+
+.iconselect {
+  display: none;
+
+}
+
 #myTabContent {
   margin-top: -120px;
   padding: 5px;
