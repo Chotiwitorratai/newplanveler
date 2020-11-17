@@ -534,6 +534,10 @@ body {
     margin-bottom: 50px;
 }
 
+.tripblock span img {
+    height: 17vw;
+}
+ 
 .timetrip {
     font-style: normal;
     font-weight: normal;
@@ -681,9 +685,6 @@ textarea {
     color: #B19999;
 }
 
-.iconbutton {
-  
-}
 
 .iconselect {
   display: none;

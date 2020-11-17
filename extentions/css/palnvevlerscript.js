@@ -26,7 +26,7 @@ function closeNav() {
 var counter = 0;
 var count = 0;
 
-function moreFields() {
+function moreFields() {                                              
     counter++;
     var newFields = document.getElementById('edit-trip').cloneNode(true);
     newFields.id = 'writeroot';
@@ -40,7 +40,7 @@ function moreFields() {
     var insertHere = document.getElementById('writeroot');
     insertHere.parentNode.appendChild(newFields);
 }
-window.onload = moreFields;
+
 
 function moreDays() {
     counter++;
@@ -104,13 +104,13 @@ function HandleBrowseClick(hidden_input_image)
 } 
 
 function iconadd () {
-  
+    var icons = document.getElementById('travel_type').value;
+    document.getElementById('myImage').src = icons;
 }
 
 function readURL(input) {
   if (input.files && input.files[0]) {
       var reader = new FileReader();
-
       reader.onload = function (e) {
           $('#blah').attr('src', e.target.result);
       }
