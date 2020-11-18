@@ -26,7 +26,7 @@ $result = mysqli_query($conn,"SELECT * FROM user");
 <td><?php echo $_SESSION["userlastname"]; ?></td>
 <td><?php echo $_SESSION["usertel"]; ?></td>
 <td><?php echo $_SESSION["userjob"]; ?></td>
-<td><a href="update-process.php?username=<?php echo $_SESSION["username"]; ?>">Update</a></td>
+<td><a href="pictest4.php?username=<?php echo $_SESSION["username"]; ?>">Update</a></td>
 </tr>
 
 </table>
