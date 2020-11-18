@@ -27,6 +27,7 @@
         <h3>Hi, <?php echo $_SESSION['useremail']; ?></h3>
         <h3>Hi, <?php echo $_SESSION['usertel']; ?></h3>
         <h3>Hi, <?php echo $_SESSION['usersex']; ?></h3>
+           <h3><img src="imageuser/<?php echo $_SESSION['userimage_user']; ?>" width="100" height="100"></h3>
         <p><a href="update3.php">Update</a></p>
         <p><a href="new-password2.php">Chang Password</a></p>
         <p><a href="logout.php">Logout</a></p>
