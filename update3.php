@@ -26,6 +26,7 @@ $result = mysqli_query($conn,"SELECT * FROM user");
 <td><?php echo $_SESSION["userlastname"]; ?></td>
 <td><?php echo $_SESSION["usertel"]; ?></td>
 <td><?php echo $_SESSION["userjob"]; ?></td>
+<td><img src="imageuser/<?php echo $_SESSION['userimage_user']; ?>" width="100" height="100"></td>
 <td><a href="pictest4.php?username=<?php echo $_SESSION["username"]; ?>">Update</a></td>
 </tr>
 
