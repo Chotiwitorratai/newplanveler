@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
@@ -17,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
 <body onclick="closeNav()">
-    <div class="form-group">
     
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
@@ -60,7 +58,7 @@
                         <div class="col-auto">
                             <div class="loginbar">
                                 <a href="/register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="#Login" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +76,6 @@
             <div id="dayadd"><br></div>
         </a>
         <input type="button" value="เพิ่มวัน" onclick="moreDays();">
-        <input type="button" id="removebtn" value="นำออก" onclick="removeHere();">
         <br>
 
     </div>
@@ -102,11 +99,13 @@
                     </div>
                 </div>
                 <div class="col-5">
-                    <div class="drop-zone">
-                            <input type='file' onchange="readURL(this);" />
-                            <img id="blah" src="#" alt="your image" />
-                        
-                      </div>
+                    <div class="addimgtrip">
+                        <div class="addimgtrip-text">เพิ่มรูปภาพ
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for="file">Choose a file</label>
+                        </div><br>
+
+                    </div>
 
                 </div>
                 <div class="col-4">
@@ -117,9 +116,26 @@
             </div>
             <div class="row detail">
                 <div class="col">
-                    <img src="/pic/caricon.png" alt="">
-                    <div class="stupid-linetrip"></div>
-                    <span class="timetrip">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                          <img src="http://lorempixel.com/75/50/abstract/">
+                          0123 4567 8912 3456
+                          <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                        
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-header">Member name (you)</li>
+                          <li>
+                            <a href="#" title="Select this card"><img src="/pic/model1.png"></a>
+                          </li>
+                          <li>
+                            <a href="#" title="Select this card"><img src="http://lorempixel.com/75/50/abstract/">0123 4567 8912 3456</a>
+                          </li>
+                          <li>
+                            <a href="#" title="Select this card"><img src="http://lorempixel.com/75/50/abstract/">0123 4567 8912 3456</a>
+                          </li>
+                        </ul>
+                      </div>
+                        <span class="timetrip">
             <input type="text" placeholder="เวลา">
             
         </span>
@@ -127,7 +143,7 @@
             </div>
         </div>
 
-        <form method="post" action="/cgi-bin/show_params.cgi"enctype="multipart/form-data">
+        <form method="post" action="/cgi-bin/show_params.cgi">
             <div id="writeroot" style="border:none;"><br></div>
 
             <div class="row"></div>
@@ -177,6 +193,7 @@
                 </div>
             </div>
         </div>
+       
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>

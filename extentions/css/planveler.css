@@ -328,6 +328,19 @@ body {
     height: 42.9px;
 }
 
+.registerinfomation select {
+    background-color: rgba(4, 134, 253, 0.5);
+    color: rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    margin-left: 15%;
+    backdrop-filter: blur(4px);
+    mix-blend-mode: normal;
+    border-radius: 15px;
+    align-items: center;
+    width: 347px;
+    height: 42.9px;
+}
+
 .loginbtu {
     margin-left: 37%;
     margin-top: 60px;
@@ -558,6 +571,35 @@ body {
     width: 50%;
     font-size: 2vw;
 }
+
+.myDiv{
+	display:none;
+    padding:10px;
+}  
+#showOne{
+    border:1px solid red;
+}
+#showTwo{
+    border:1px solid green;
+}
+#showThree{
+    border:1px solid blue;
+}
+  #showOne{
+      color:red;
+      border:1px solid red;
+      padding:10px;
+  }
+  #showTwo{
+      color:green;
+      border:1px solid green;
+      padding:10px;
+  }
+  #showThree{
+      color:blue;
+      border:1px solid blue;
+      padding:10px;
+  }
 
 textarea {
     font-size: 1vw !important;
@@ -827,6 +869,9 @@ textarea {
         width: 250px;
         height: 30px;
     }
+
+    
+
     .registerinfomation {
         width: 320px;
         height: 340px;

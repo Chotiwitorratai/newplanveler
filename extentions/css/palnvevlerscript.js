@@ -1,3 +1,4 @@
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -41,6 +42,7 @@ function moreFields() {
     insertHere.parentNode.appendChild(newFields);
 }
 
+// window.onload = moreFields;
 
 function moreDays() {
     counter++;
@@ -92,29 +94,9 @@ function removeText() {
     weekParent.removeChild(item);
 }
 
-for (i = 0; i < addButtons.length; i++) {
-    var self = addButtons[i];
-    self.addEventListener("click", addText);
-}
-
-function HandleBrowseClick(hidden_input_image)
-{
-    var fileinputElement = document.getElementById(hidden_input_image);
-    fileinputElement.click();
-} 
-
-function iconadd () {
-    var icons = document.getElementById('travel_type').value;
-    document.getElementById('myImage').src = icons;
-}
-
-function readURL(input) {
-  if (input.files && input.files[0]) {
-      var reader = new FileReader();
-      reader.onload = function (e) {
-          $('#blah').attr('src', e.target.result);
-      }
-
-      reader.readAsDataURL(input.files[0]);
-  }
-}
+$(function() {
+    $('#colorselector').change(function(){
+        $('.colors').hide();
+        $('#' + $(this).val()).show();
+    });
+});

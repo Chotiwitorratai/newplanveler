@@ -58,7 +58,7 @@
                         <div class="col-auto">
                             <div class="loginbar">
                                 <a href="/register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a href="#Login" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
                             </div>
                         </div>
                     </div>
@@ -81,13 +81,26 @@
     </div>
     <div class="container justify-content-center tripblock" id="1 tripblock">
         <div class="row">
+            <Select id="colorselector">
+                <option value="car">รถยนต์</option>
+                <option value="train">รถไฟ</option>
+                <option value="walk">เดิน</option>
+                <option value="ship">เรือ</option>
+                <option value="bike">จักรยาน</option>
+
+             </Select>
+             <div id="car" class="colors" style="display:none"><img src="/pic/model1.png" alt=""> </div>
+             <div id="train" class="colors" style="display:none"> <img src="/pic/model2.png" alt=""> </div>
+             <div id="walk" class="colors" style="display:none"><img src="/pic/model3.png" alt=""></div>
+             <div id="ship" class="colors" style="display:none"><img src="/pic/model4.png" alt=""></div>
+             <div id="bike" class="colors" style="display:none"><img src="/pic/model1.png" alt=""></div>        
             <div class="day" id="dayinput" style="float:left;display:none;">
                 <input type="button" value="นำออก" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">
                 <input type="text" name="date" placeholder="วันที่"></div>
         </div>
 
         <div class="row">
-
+            
         </div>
         <div id="edit-trip" style="display:none;">
             <input type="button" value="นำออก" class="takeoutbtu" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
@@ -109,27 +122,30 @@
 
                 </div>
                 <div class="col-4">
+                    
                     <input type="text" name="trip-place" placeholder="เพิ่มสถานที่">
                     <textarea rows="4" cols="auto" name="comment" form="usrform">
                 </textarea>
                 </div>
             </div>
+            
             <div class="row detail">
                 <div class="col">
-                    <div class="form-group">
-                        <label for="location_name">รูปแบบการเดินทาง</label>
-                <select id="travel_type" name="travel_type" onchange=iconadd();>
-                        <option value="/pic/model1.png">รถยนต์</option>
-                        <option value="/pic/model2.png">รถไฟ</option>
-                        <option value="/pic/model3.png">เรือ</option>
-                        <option value="/pic/model4.png">เดิน</option>
-                        <option value="/pic/66.png">จักรยาน</option>
-                      </select>
-                      <span id="showicon"><img id="myImage" src="/pic/model1.png" style="width:100px"></span>
-                    </div>
-                    
-                    <div class="stupid-linetrip"></div>
-                    <span class="timetrip">
+                    <Select id="colorselector">
+                        <option value="car">รถยนต์</option>
+                        <option value="train">รถไฟ</option>
+                        <option value="walk">เดิน</option>
+                        <option value="ship">เรือ</option>
+                        <option value="bike">จักรยาน</option>
+
+                     </Select>
+                     <div id="car" class="colors" style="display:none"><img src="/pic/model1.png" alt=""> </div>
+                     <div id="train" class="colors" style="display:none"> <img src="/pic/model2.png" alt=""> </div>
+                     <div id="walk" class="colors" style="display:none"><img src="/pic/model3.png" alt=""></div>
+                     <div id="ship" class="colors" style="display:none"><img src="/pic/model4.png" alt=""></div>
+                     <div id="bike" class="colors" style="display:none"><img src="/pic/model1.png" alt=""></div>                     
+
+                        <span class="timetrip">
             <input type="text" placeholder="เวลา">
             
         </span>
