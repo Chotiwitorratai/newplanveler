@@ -88,6 +88,13 @@ body {
     position: relative;
 }
 
+#navbar span#profile-icon {
+    font-size: 18px;
+    color: #454545;
+    font-weight: 400;
+    padding: 5px;
+}
+
 #navbar span.icon {
     float: left;
     display: inline-block;
@@ -899,10 +906,17 @@ textarea {
     }
 }
 
+@media screen and (max-width: 3400px) {
+    .loginbar {
+        position: fixed;
+        right: 0;
+    }
+}
+
 @media screen and (max-width: 1919px) {
     .loginbar {
-        position: relative;
-        right: -300px;
+        position: fixed;
+        right: -5px;
     }
 }
 
@@ -913,7 +927,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 1469px) {
+@media screen and (max-width: 1450px) {
     .loginbar {
         position: relative;
         right: -180px;
@@ -980,6 +994,17 @@ textarea {
     #loginpage .optionpassword {
         margin-left: -6%;
     }
+    .imgshow td {
+        position: relative;
+        display: flex;
+        margin-top: 2vh;
+        margin-left: 20%;
+    }
+    .imgshow th {
+        position: relative;
+        display: flex;
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 626px) {
@@ -1013,7 +1038,7 @@ textarea {
         display: none;
         margin-right: 20%;
     }
-    .imgshow {
+    .imgshow td {
         margin-left: -10px;
     }
     .search .search-input {

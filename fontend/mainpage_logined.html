@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/extentions/css/planveler.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
+
 </head>
 
 <body onclick="closeNav()">
@@ -34,14 +36,14 @@
         <div style="position: absolute;bottom: 0px;">
             <p>
                 <p>
-                    <p></p><a title="ลงชื่อเข้าใช้" href="Login.html">Login</a></p>
+                    <p></p><a href="Login.html">Login</a></p>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
             <div id="navbar">
-                <span title="เมนู" style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
+                <span style="font-size:35px;cursor:pointer;" onclick="openNav(event)">&#9776;</span>
 
                 <span class="icon"> <a href="mainpage.html"> 
     <img src="/pic/66.png" width="160" height="90" alt="" loading="lazy">
@@ -53,8 +55,11 @@
                     <div class="row" style="float: right;margin-right: auto;">
                         <div class="col-auto">
                             <div class="loginbar">
-                                <a title="เพิ่มบัญชี" href="register.html" style=><img src="/pic/Group 5.png" alt="Register"></a>
-                                <a title="เข้าสู่ระบบ" href="Login.html" style=><img src="/pic/Group 7.png" alt="Login"></a>
+                                <a href="userprofile.html"><img src="/pic/profileicon.png" alt="img"></a>
+                                <span id="profile-icon">
+                                    aomsin <br> 
+                                    <a title="ทริปที่บันทึก" href="#"><i class='fas fa-heart' style='font-size:24px'></i></a>
+                                </span>
                             </div>
                         </div>
                     </div>
