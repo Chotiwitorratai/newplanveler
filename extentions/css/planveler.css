@@ -512,6 +512,14 @@ body {
     text-align: center;
 }
 
+.day {
+    font-size: 1vw;
+    width: 50%;
+    display: inline;
+    position: absolute;
+    left: 1%;
+}
+
 .daytrip {
     position: sticky;
     left: 49px;
@@ -550,7 +558,7 @@ body {
 .tripblock span img {
     height: 17vw;
 }
- 
+
 .timetrip {
     font-style: normal;
     font-weight: normal;
@@ -572,34 +580,40 @@ body {
     font-size: 2vw;
 }
 
-.myDiv{
-	display:none;
-    padding:10px;
-}  
-#showOne{
-    border:1px solid red;
+.myDiv {
+    display: none;
+    padding: 10px;
 }
-#showTwo{
-    border:1px solid green;
+
+#showOne {
+    border: 1px solid red;
 }
-#showThree{
-    border:1px solid blue;
+
+#showTwo {
+    border: 1px solid green;
 }
-  #showOne{
-      color:red;
-      border:1px solid red;
-      padding:10px;
-  }
-  #showTwo{
-      color:green;
-      border:1px solid green;
-      padding:10px;
-  }
-  #showThree{
-      color:blue;
-      border:1px solid blue;
-      padding:10px;
-  }
+
+#showThree {
+    border: 1px solid blue;
+}
+
+#showOne {
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+#showTwo {
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+}
+
+#showThree {
+    color: blue;
+    border: 1px solid blue;
+    padding: 10px;
+}
 
 textarea {
     font-size: 1vw !important;
@@ -727,10 +741,8 @@ textarea {
     color: #B19999;
 }
 
-
 .iconselect {
-  display: none;
-
+    display: none;
 }
 
 #myTabContent {
@@ -869,9 +881,6 @@ textarea {
         width: 250px;
         height: 30px;
     }
-
-    
-
     .registerinfomation {
         width: 320px;
         height: 340px;

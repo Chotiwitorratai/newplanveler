@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="/extentions/css/planveler.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap" rel="stylesheet">
 </head>
+
 <body onclick="closeNav()">
-    
+
     <div id="mySidenav" class="sidenav" onclick="event.stopPropagation();">
         <span style="font-size:35px;cursor:pointer;position:absolute;top: 0;right: 5;" onclick="closeNav()">&times;</span>
         <div style="display: block; color: #948BFF; text-align: center;">ชื่อเราเองจ้า</div>
@@ -81,31 +82,18 @@
     </div>
     <div class="container justify-content-center tripblock" id="1 tripblock">
         <div class="row">
-            <Select id="colorselector">
-                <option value="car">รถยนต์</option>
-                <option value="train">รถไฟ</option>
-                <option value="walk">เดิน</option>
-                <option value="ship">เรือ</option>
-                <option value="bike">จักรยาน</option>
-
-             </Select>
-             <div id="car" class="colors" style="display:none"><img src="/pic/model1.png" alt=""> </div>
-             <div id="train" class="colors" style="display:none"> <img src="/pic/model2.png" alt=""> </div>
-             <div id="walk" class="colors" style="display:none"><img src="/pic/model3.png" alt=""></div>
-             <div id="ship" class="colors" style="display:none"><img src="/pic/model4.png" alt=""></div>
-             <div id="bike" class="colors" style="display:none"><img src="/pic/model1.png" alt=""></div>        
             <div class="day" id="dayinput" style="float:left;display:none;">
                 <input type="button" value="นำออก" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">
-                <input type="text" name="date" placeholder="วันที่"></div>
+                <input type="text" name="date" placeholder="วันที่">
+            </div>
         </div>
 
         <div class="row">
-            
+
         </div>
         <div id="edit-trip" style="display:none;">
             <input type="button" value="นำออก" class="takeoutbtu" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
             <div class="row">
-                <div></div>
                 <div class="col-2">
                     <div class="triptime">
                         <input type="text" id="time" name="time" placeholder="เวลา">
@@ -122,13 +110,13 @@
 
                 </div>
                 <div class="col-4">
-                    
+
                     <input type="text" name="trip-place" placeholder="เพิ่มสถานที่">
                     <textarea rows="4" cols="auto" name="comment" form="usrform">
                 </textarea>
                 </div>
             </div>
-            
+
             <div class="row detail">
                 <div class="col">
                     <Select id="colorselector">
@@ -139,13 +127,13 @@
                         <option value="bike">จักรยาน</option>
 
                      </Select>
-                     <div id="car" class="colors" style="display:none"><img src="/pic/model1.png" alt=""> </div>
-                     <div id="train" class="colors" style="display:none"> <img src="/pic/model2.png" alt=""> </div>
-                     <div id="walk" class="colors" style="display:none"><img src="/pic/model3.png" alt=""></div>
-                     <div id="ship" class="colors" style="display:none"><img src="/pic/model4.png" alt=""></div>
-                     <div id="bike" class="colors" style="display:none"><img src="/pic/model1.png" alt=""></div>                     
+                    <div id="car" class="colors" style="display:none"><img src="/pic/model1.png" alt=""> </div>
+                    <div id="train" class="colors" style="display:none"> <img src="/pic/model2.png" alt=""> </div>
+                    <div id="walk" class="colors" style="display:none"><img src="/pic/model3.png" alt=""></div>
+                    <div id="ship" class="colors" style="display:none"><img src="/pic/model4.png" alt=""></div>
+                    <div id="bike" class="colors" style="display:none"><img src="/pic/model1.png" alt=""></div>
 
-                        <span class="timetrip">
+                    <span class="timetrip">
             <input type="text" placeholder="เวลา">
             
         </span>
@@ -203,7 +191,7 @@
                 </div>
             </div>
         </div>
-       
+
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>

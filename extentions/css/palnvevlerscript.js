@@ -1,4 +1,3 @@
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -27,7 +26,7 @@ function closeNav() {
 var counter = 0;
 var count = 0;
 
-function moreFields() {                                              
+function moreFields() {
     counter++;
     var newFields = document.getElementById('edit-trip').cloneNode(true);
     newFields.id = 'writeroot';
@@ -95,8 +94,8 @@ function removeText() {
 }
 
 $(function() {
-    $('#colorselector').change(function(){
-        $('.colors').hide();
+    $('#Vehicleselector').change(function() {
+        $('.Vehicle').hide();
         $('#' + $(this).val()).show();
     });
 });
