@@ -1007,11 +1007,10 @@ textarea {
     }
 }
 
-@media screen and (max-width: 626px) {
+@media screen and (max-width: 627px) {
     .bot-bar {
         height: 180px;
-        display: inline-block;
-        width: 105%;
+        width: 100%;
     }
 }
 
