@@ -322,7 +322,8 @@ body {
     height: 42.9px;
 }
 
-.registerinfomation input {
+.registerinfomation1 input,
+.registerinfomation2 input {
     background-color: rgba(4, 134, 253, 0.5);
     color: rgba(0, 0, 0, 0.2);
     margin-top: 30px;
@@ -335,7 +336,8 @@ body {
     height: 42.9px;
 }
 
-.registerinfomation select {
+.registerinfomation1 select,
+.registerinfomation2 select {
     background-color: rgba(4, 134, 253, 0.5);
     color: rgba(0, 0, 0, 0.2);
     margin-top: 30px;
@@ -780,9 +782,19 @@ textarea {
     padding: 10px;
 }
 
-.registerinfomation {
+.registerinfomation1 {
     display: inline-block;
-    margin-left: 15%;
+    margin-left: 30%;
+    width: 500px;
+    height: 509px;
+    right: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.registerinfomation2 {
+    display: inline-block;
+    margin-right: 30%;
     width: 500px;
     height: 509px;
     right: 1px;
@@ -812,7 +824,8 @@ textarea {
         left: -100px;
         font-size: 30px;
     }
-    .registerinfomation {
+    .registerinfomation1,
+    .registerinfomation2 {
         display: block;
         margin-left: 10%;
     }
@@ -825,7 +838,8 @@ textarea {
 }
 
 @media screen and (max-width: 572px) {
-    .registerinfomation {
+    .registerinfomation1,
+    registerinfomation2 {
         margin-left: -2%;
         width: 500px;
     }
@@ -866,8 +880,11 @@ textarea {
     #loginpage .loginbtu {
         margin-left: 40%;
     }
-    .registerinfomation {
+    .registerinfomation1 {
         margin-left: 15% !important;
+    }
+    .registerinfomation2 {
+        margin-right: 15% !important;
     }
     #loginpage .optionpassword {
         margin-left: 0px !important;
@@ -875,10 +892,12 @@ textarea {
 }
 
 @media screen and (max-width: 509px) {
-    .registerinfomation .content-4 {
+    .registerinfomation1 .content-4,
+    .registerinfomation2 .content-4 {
         font-size: 20px;
     }
-    .registerinfomation input {
+    .registerinfomation1 input,
+    .registerinfomation2 input {
         margin-top: 15px;
         margin-left: 10%;
         backdrop-filter: blur(4px);
@@ -888,7 +907,19 @@ textarea {
         width: 250px;
         height: 30px;
     }
-    .registerinfomation {
+    .registerinfomation1 select,
+    .registerinfomation2 select {
+        margin-top: 15px;
+        margin-left: 10%;
+        backdrop-filter: blur(4px);
+        mix-blend-mode: normal;
+        border-radius: 15px;
+        align-items: center;
+        width: 250px;
+        height: 30px;
+    }
+    .registerinfomation1,
+    .registerinfomation2 {
         width: 320px;
         height: 340px;
         margin-left: 15%;
@@ -957,7 +988,8 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
-    .registerinfomation {
+    .registerinfomation1,
+    .registerinfomation2 {
         margin-left: 2%;
     }
     .bigimg {
@@ -981,7 +1013,8 @@ textarea {
         width: 171px;
         height: 96px;
     }
-    .registerinfomation {
+    .registerinfomation1,
+    .registerinfomation2 {
         margin-bottom: 100px;
         margin-left: 22.5%;
     }
@@ -1007,10 +1040,11 @@ textarea {
     }
 }
 
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 643px) {
     .bot-bar {
         height: 180px;
-        width: 100%;
+        width: 105%;
+        display: block;
     }
 }
 
@@ -1078,7 +1112,8 @@ textarea {
     .login-logo img {
         margin-left: -40px;
     }
-    .registerinfomation {
+    .registerinfomation1,
+    .registerinfomation2 {
         margin-left: 4% !important;
     }
     .headerlogin {
@@ -1087,7 +1122,8 @@ textarea {
 }
 
 @media screen and (max-width: 356px) {
-    .registerinfomation {
+    .registerinfomation1,
+    .registerinfomation2 {
         margin-left: -3.5% !important;
     }
     #cardpic {
