@@ -320,7 +320,8 @@ body {
     height: 42.9px;
     border: none;
 }
-.forgotbtu input{
+
+.forgotbtu input {
     display: inline-block;
     align-items: center;
     width: 139px;
@@ -337,21 +338,21 @@ body {
 }
 
 .confirm-header {
-    font-size : 24px;
-    color : black;
+    font-size: 24px;
+    color: black;
     text-align: center;
     line-height: 28px;
     padding: 5px;
 }
 
-.confirm-img img{
+.confirm-img img {
     box-sizing: content-box;
     width: 136px;
     height: 134px;
 }
 
 .confirm-content {
-    text-align : center;
+    text-align: center;
     margin: 20;
     padding: 5 px;
 }
@@ -360,10 +361,10 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: black;
-    font-weight : bold;
+    font-weight: bold;
 }
 
-.confirmbtu input{
+.confirmbtu input {
     display: inline-block;
     align-items: center;
     width: 164px;
@@ -424,11 +425,9 @@ body {
     height: 42.9px;
 }
 
-.register-checkbox{
+.register-checkbox {
     padding-left: 10px;
-
 }
-
 
 .loginbtu {
     position: absolute;
@@ -595,7 +594,7 @@ body {
 
 .header-trip {
     margin-top: 120px;
-    margin-bottom:120px;
+    margin-bottom: 120px;
     font-style: normal;
     font-weight: normal;
     font-size: 5vw;
@@ -619,7 +618,6 @@ body {
 }
 
 .daytrip {
-
     position: fixed;
     left: 49px;
     top: 173px;
@@ -857,6 +855,73 @@ textarea {
     padding: 10px;
 }
 
+.alltrip-header {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    margin-top: 200px;
+    text-align: center;
+    color: #444444;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.alltrip-add button {
+    position: absolute;
+    top: 300px;
+    width: 105px;
+    height: 38px;
+    margin-left: 58px;
+    background: #D9F5F7;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    border: 0px solid;
+}
+
+.alltrip-content {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.alltrip-btn {
+    width: 134px;
+    height: 46px;
+    background: #1C3C25;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+
+.alltrip-img img {
+    width: 415px;
+    height: 277px;
+}
+
+.alltrip-nametrip {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.alltrip-add a {
+    color: black;
+}
+
+.alltrip-add a:hover {
+    color: white;
+}
+
+.alltrip-add button:hover {
+    background-color: rgb(76, 168, 76);
+}
+
 .btn-google {
     color: #878787;
     background-color: white;
@@ -886,7 +951,7 @@ textarea {
 
 .register-grid {
     display: grid;
-    grid-template-columns: 500px 500px; 
+    grid-template-columns: 500px 500px;
     grid-gap: 10%;
     justify-content: center;
 }
@@ -902,6 +967,7 @@ textarea {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 20%;
 }
+
 .confirmbox {
     display: grid;
     grid-template-columns: auto;
@@ -929,7 +995,6 @@ textarea {
         position: relative;
         left: 20%;
     }
-
     .forgotbtu input {
         display: block;
         position: relative;
@@ -938,14 +1003,11 @@ textarea {
     .forgotbox input[type="text"] {
         width: 250px;
         margin-left: auto;
-        
     }
-
     .forgotbox input[type="email"] {
         width: 250px;
         margin-left: auto;
     }
-
 }
 
 @media screen and (max-width: 700px) {
@@ -1009,7 +1071,7 @@ textarea {
     .registerinfomation .content-4 {
         font-size: 20px;
     }
-    .registerinfomation input{
+    .registerinfomation input {
         margin-top: 15px;
         margin-left: 10%;
         backdrop-filter: blur(4px);
@@ -1019,10 +1081,8 @@ textarea {
         width: 250px;
         height: 30px;
     }
-    .registerinfomation input{
-
-    }
-    .registerinfomation select{
+    .registerinfomation input {}
+    .registerinfomation select {
         margin-top: 15px;
         backdrop-filter: blur(4px);
         mix-blend-mode: normal;
@@ -1036,7 +1096,6 @@ textarea {
         width: 320px;
         height: 340px;
     }
-    
     .registerbtu {
         width: 80px;
         height: 31px;
@@ -1105,18 +1164,18 @@ textarea {
         margin-left: -3.2%;
     }
 }
-@media screen and (max-width: 1100px){
-    .register-grid{
-        display: grid;
-        grid-template-columns: 100% ;
-        justify-content: space-between;
 
+@media screen and (max-width: 1100px) {
+    .register-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
     }
     .registerinfomation {
         position: relative;
         top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -1135,7 +1194,6 @@ textarea {
     .stupid-line3 {
         display: none;
     }
-
     #loginpage .content-4 {
         margin-top: 100px;
     }
@@ -1153,12 +1211,21 @@ textarea {
     .login-btn {
         position: absolute;
         top: 150%
-
     }
-        #loginpage .loginbtu {
-            top: 110%;
-        }
-
+    #loginpage .loginbtu {
+        top: 120%;
+        margin-bottom: 200px;
+    }
+    .login-1 {
+        display: block;
+        position: relative;
+        top: 300%;
+    }
+    .login-2 {
+        display: block;
+        position: relative;
+        top: -50%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1227,14 +1294,12 @@ textarea {
         line-height: 30px;
         text-align: center;
     }
-
     .headerlogin {
         font-size: 50px;
     }
 }
 
 @media screen and (max-width: 356px) {
-
     #cardpic {
         margin: 100px !important;
     }
