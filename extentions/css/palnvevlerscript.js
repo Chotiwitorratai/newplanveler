@@ -62,7 +62,7 @@ function moreDays() {
     dayadd.appendChild(days);
 
 }
-
+window.onload=moreDays;
 
 function removeHere() {
     this.parentNode.parentNode.removeChild(this.parentNode);

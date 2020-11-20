@@ -113,7 +113,7 @@
                 </div>
                 <div class="col-4">
 
-                    <input type="text" name="trip-place" placeholder="เพิ่มสถานที่">
+                   <span class="place"><input type="text" name="trip-place" placeholder="เพิ่มสถานที่"></span> 
                     <textarea rows="4" cols="auto" name="comment" form="usrform">
                 </textarea>
                 </div>
@@ -147,12 +147,15 @@
             <div id="writeroot" style="border:none;"><br></div>
 
             <div class="row"></div>
-            <div class="btn-addform">
-                <input type="button" value="เพิ่ม" onclick="moreFields();" />
-                <input type="submit" value="Send form" />
-            </div>
+           
         </form>
+        <div class="btn-addform">
+            <br>
+            <input type="button" value="เพิ่ม" onclick="moreFields();" />
+            <input type="submit" value="Send form" />
+        </div>
     </div>
+    
     <div class="bot-bar" style="z-index:1;">
         <div class="container">
             <div class="row justify-content-center" style="margin-top:20px;">

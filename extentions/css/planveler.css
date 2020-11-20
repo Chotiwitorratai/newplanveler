@@ -595,6 +595,7 @@ body {
 
 .header-trip {
     margin-top: 120px;
+    margin-bottom:120px;
     font-style: normal;
     font-weight: normal;
     font-size: 5vw;
@@ -618,7 +619,8 @@ body {
 }
 
 .daytrip {
-    position: sticky;
+
+    position: fixed;
     left: 49px;
     top: 173px;
     width: 49px;
@@ -643,7 +645,7 @@ body {
 .tripblock {
     font-weight: normal;
     font-size: 2vw;
-    line-height: 24px;
+    line-height: 2vw;
     text-align: center;
     color: #646464;
 }
@@ -652,8 +654,11 @@ body {
     margin-bottom: 50px;
 }
 
-.tripblock span img {
-    height: 17vw;
+.place {
+    font-size: 3vw;
+    line-height: 3vw;
+    display: block;
+    padding-bottom: 1vw;
 }
 
 .timetrip {
