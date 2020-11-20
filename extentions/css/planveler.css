@@ -304,9 +304,82 @@ body {
     position: absolute;
     width: 171px;
     height: 96px;
-    left: 42.5%;
+    left: 43.5%;
     top: 0px;
     z-index: 1;
+}
+
+.forgotbox input {
+    background-color: #eaeaea;
+    color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    mix-blend-mode: normal;
+    border-radius: 15px;
+    align-items: center;
+    width: 347px;
+    height: 42.9px;
+    border: none;
+}
+.forgotbtu input{
+    display: inline-block;
+    align-items: center;
+    width: 139px;
+    height: 51px;
+    margin-top: 35px;
+    background: #515151;
+    border-radius: 18px;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 43px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+}
+
+.confirm-header {
+    font-size : 24px;
+    color : black;
+    text-align: center;
+    line-height: 28px;
+    padding: 5px;
+}
+
+.confirm-img img{
+    box-sizing: content-box;
+    width: 136px;
+    height: 134px;
+}
+
+.confirm-content {
+    text-align : center;
+    margin: 20;
+    padding: 5 px;
+}
+
+.confirm-username {
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+    font-weight : bold;
+}
+
+.confirmbtu input{
+    display: inline-block;
+    align-items: center;
+    width: 164px;
+    height: 39px;
+    margin-top: 35px;
+    background: #fff;
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #445cb0;
+    position: relative;
+    left: 115px;
 }
 
 .loginbox input {
@@ -802,6 +875,29 @@ textarea {
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
+.forgotbox {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 500px;
+    height: 509px;
+    right: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20%;
+}
+.confirmbox {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 500px;
+    height: 509px;
+    right: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20%;
+}
+
 @media screen and (max-height: 600px) {
     .sidenav {
         padding-top: 15px;
@@ -814,6 +910,32 @@ textarea {
 @media screen and (max-width: 500px) {
     .login-logo img {
         margin-left: -6%;
+    }
+    .confirmbtu input {
+        display: block;
+        position: relative;
+        left: 20%;
+    }
+
+    .forgotbtu input {
+        display: block;
+        position: relative;
+        margin-left: 45px;
+    }
+    .forgotbox input[type="text"] {
+        width: 250px;
+        margin-left: auto;
+        
+    }
+
+    .forgotbox input[type="email"] {
+        width: 250px;
+        margin-left: auto;
+    }
+
+    .login-logo img {
+        position: absolute;
+        left: 38% !important;
     }
 }
 
@@ -935,6 +1057,12 @@ textarea {
         line-height: 30px;
         text-align: center;
     }
+    .confirmbox {
+        width: 100%;
+    }
+    .forgotbox {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 3400px) {
@@ -987,6 +1115,13 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .login-logo img {
+        position: absolute;
+        left: 41%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .registerinfomation1,
     .registerinfomation2 {
@@ -994,6 +1129,10 @@ textarea {
     }
     .bigimg {
         display: block;
+    }
+    .login-logo img {
+        position: absolute;
+        left: 41%;
     }
 }
 
@@ -1008,7 +1147,7 @@ textarea {
     }
     .login-logo img {
         position: absolute;
-        left: 38%;
+        left: 37%;
         top: 0px;
         width: 171px;
         height: 96px;
@@ -1040,11 +1179,15 @@ textarea {
     }
 }
 
-@media screen and (max-width: 643px) {
+@media screen and (max-width: 767px) {
     .bot-bar {
         height: 180px;
         width: 105%;
         display: block;
+    }
+    .login-logo img {
+        position: absolute;
+        left: 33.5%;
     }
 }
 
@@ -1110,7 +1253,7 @@ textarea {
         text-align: center;
     }
     .login-logo img {
-        margin-left: -40px;
+        margin-left: -14%;
     }
     .registerinfomation1,
     .registerinfomation2 {
