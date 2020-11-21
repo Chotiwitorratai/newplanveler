@@ -1,7 +1,7 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos || currentScrollPos <= 0) {
         document.getElementById("navbar").style.top = "0";
     } else {
         document.getElementById("navbar").style.top = "-300px";
@@ -68,7 +68,7 @@ function moreDays() {
     dayadd.appendChild(days);
 
 }
-window.onload=moreDays;
+window.onload = moreDays;
 
 function removeHere() {
     this.parentNode.parentNode.removeChild(this.parentNode);
