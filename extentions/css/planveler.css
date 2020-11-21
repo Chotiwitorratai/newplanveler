@@ -632,6 +632,16 @@ body {
     text-align: center;
     z-index: 1;
 }
+#writeday {
+    position: relative;
+    right: 30%;
+    margin-bottom: 30px;
+}
+
+#writeday input{
+    border: none;
+    border-bottom: 1px solid;
+}
 
 .daytrip a {
     text-decoration-line: underline;
@@ -770,21 +780,24 @@ textarea {
 }
 
 .addimgtrip {
-    width: 100%;
-    height: 157px;
+    width: 80%;
+    height: 10.5vw;
     background: #F4F1F1;
     border-radius: 10px;
+    margin-left: 20%;
 }
 
 .addimgtrip-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
 }
 
 .detail {
     line-height: 100px;
+    margin-top: 10%;
+    padding: 10px;
 }
 
 .emp-profile {
@@ -1081,6 +1094,12 @@ textarea {
     .loginbar {
         position: relative;
         right: -180px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .addimgtrip {
+        height: 137px;
     }
 }
 

@@ -30,6 +30,7 @@ function moreFields() {
     counter++;
     var newFields = document.getElementById('edit-trip').cloneNode(true);
     newFields.id = 'writeroot';
+    newFields.className = 'form' + counter;
     newFields.style.display = 'block';
     var newField = newFields.childNodes;
     for (var i = 0; i < newField.length; i++) {
@@ -39,22 +40,27 @@ function moreFields() {
     }
     var insertHere = document.getElementById('writeroot');
     insertHere.parentNode.appendChild(newFields);
-}
+    var attr = document.createAttribute("class");
+    attr.value = "form" + counter;
+    console.log(attr.value);
+    }
 
 // window.onload = moreFields;
 
 function moreDays() {
     counter++;
     var newFields = document.getElementById('dayinput').cloneNode(true);
-    newFields.id = 'writeroot';
+    newFields.id = 'writeday';
+    newFields.className = 'day' + counter;
     newFields.style.display = 'block';
+    newFields.style= 'margin-bot : 20px;';
     var newField = newFields.childNodes;
     for (var i = 0; i < newField.length; i++) {
         var theName = newField[i].name
         if (theName)
             newField[i].name = theName + counter;
     }
-    var insertHere = document.getElementById('writeroot');
+    var insertHere = document.getElementById('writeday');
     insertHere.parentNode.appendChild(newFields);
     count++;
     let days = document.createElement('dt');
