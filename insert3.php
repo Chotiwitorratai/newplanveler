@@ -19,6 +19,7 @@ if(move_uploaded_file($path,$newPath.$new_file_name)){
         "lastname" => $_POST["lastname"],
         "tel" => $_POST["tel"],
         "job" => $_POST["job"],
+        
        
         "image_user" => $new_file_name
     );
