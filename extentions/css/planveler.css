@@ -445,6 +445,24 @@ body {
     color: white;
 }
 
+.vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid #1C3C25;
+    height: 400px;
+  }
+  
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #1C3C25;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+
 .login-btn {
     position: absolute;
     top: 50%;
@@ -662,11 +680,65 @@ body {
     margin-bottom: 50px;
 }
 
+.comment {
+    margin-top: 200px;
+}
+
+.commentbox {
+    width: 70%;
+    margin-left: 30px;
+    height: 232px;  
+    background: #F8FDFB;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.tagbox {
+    width: 20%;
+    height: 50px;
+    background: #F7F5F5;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 20px 20px;
+    
+}
+
+.tag a {
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+    color: #CDCDCD;
+    margin: 60px 20px;
+}
+
 .place {
     font-size: 3vw;
     line-height: 3vw;
     display: block;
     padding-bottom: 1vw;
+}
+
+.reviwe-btu {
+    width: 135px;
+    height: 42px;
+    justify-content: center;
+    background: #1C3C25;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #CDCDCD;
+
+}
+
+.reviwe a {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20%;
+}
+
+.reviwe {
+    position: relative;
+    bottom: 0px;
 }
 
 .timetrip {
@@ -1046,6 +1118,32 @@ textarea {
         width: 500px;
     }
 }
+@media screen and (max-width:548px) {
+    .comment .row{
+        display: block;
+        margin-bottom: 100px;
+    }
+    .tag a {
+        margin:10px 10px;
+        
+    }
+    .tagbox {
+        height: 20px;
+        padding: 2px 2px;
+        margin-top: 20px;
+    }
+    .commentbox {
+        position: relative;
+        top: 50px;
+    }
+    .comment {
+        margin-left: 0;
+    }
+    .reviwe a .reviwe-btu{
+        margin-left: 30%;
+        margin-top: 50px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .side-bg {
@@ -1210,7 +1308,7 @@ textarea {
         right: 18px;
         top: 0px;
     }
-    .stupid-line3 {
+    .vl {
         display: none;
     }
     #loginpage .content-4 {
@@ -1249,8 +1347,8 @@ textarea {
 
 @media screen and (max-width: 767px) {
     .bot-bar {
-        height: 180px;
-        width: 105%;
+        height: auto;
+        width: 100%;
         display: block;
     }
 }
