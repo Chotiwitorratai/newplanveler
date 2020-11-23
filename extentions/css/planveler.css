@@ -386,7 +386,7 @@ body {
 .loginbox input {
     background-color: rgba(4, 134, 253, 0.5);
     color: rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
+    margin-top: 50px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -431,7 +431,7 @@ body {
 
 .loginbtu {
     position: absolute;
-    top: 150%;
+    top: 115%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 139px;
