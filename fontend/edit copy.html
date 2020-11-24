@@ -79,7 +79,7 @@
         <br>
 
     </div>
-    <div class="container justify-content-center tripblock" id="1 tripblock">
+    <div class="container-fluid justify-content-center tripblock" id="1 tripblock">
         <div class="row">
             <div class="day" id="dayinput" style="float:left;display:none;">
                 <input type="button" value="นำออก" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">
@@ -87,7 +87,16 @@
         </div>
 
         <div class="row">
+            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><img id="output" width="200" /></p>
 
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
         </div>
         <div id="edit-trip" style="display:none;">
             <input type="button" value="นำออก" class="takeoutbtu" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" /><br /><br />
@@ -154,13 +163,13 @@
         </form>
     </div>
     <div class="bot-bar" style="z-index:1;">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center" style="margin-top:20px;">
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>About us</h1>
                         <p>
-                            <p><a href="/planveler.html">What's Planveler?</a>
+                            <p><a href="planveler.html">What's Planveler?</a>
                                 <p><a href="Howtouse.html">How to use</a>
                     </div>
                 </div>
@@ -170,7 +179,7 @@
                         <p>
                             <p><a href="https://www.google.com/maps/dir/13.7358628,100.7661637/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87/@13.7354147,100.7609192,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x311d664988a1bedf:0xcc678f180e221cd0!2m2!1d100.7782323!2d13.7298889"
                                     target="_blank">Address</a>
-                                <p><a href="">E-mail</a>
+                                <p><a href="">planveler@gamil.com</a>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -178,17 +187,17 @@
                         <h1>Planveler Policies</h1>
                         <p>
                             <p><a href="Terms&Condition.html">Terms & Conditions</a>
-                                <p><a href="/Help.html">Help Center</a>
+                                <p><a href="Help.html">Help Center</a>
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="botbar-data">
                         <h1>Follow us</h1>
                         <p>
-                            <a href="#facebook"><img src="/pic/Facebook logo 2.png"></a>
+                            <a href="https://www.facebook.com/Planveler-109500384231284"><img src="/pic/Facebook logo 2.png"></a>
                             <p></p>
                             <a href="#line"><img src="/pic/Line logo 1.png"></a>
-                            <a href="#ig"><img src="/pic/Instragram Logo 2.png"></a>
+                            <a href="https://www.instagram.com/planveler.official/"><img src="/pic/Instragram Logo 2.png"></a>
                     </div>
                 </div>
             </div>

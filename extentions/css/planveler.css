@@ -41,7 +41,7 @@ body {
 }
 
 .bot-bar {
-    position: relative;
+    position: relative; 
     margin-top: 182px;
     width: 100%;
     height: 107px;
@@ -52,6 +52,7 @@ body {
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;
+    display: block;
 }
 
 #navbar {
@@ -603,6 +604,11 @@ tr img{
     line-height: 43px;
     text-align: center;
     color: rgba(77, 53, 49, 0.71);
+}
+
+.icon-bot {
+    margin-top: -100px;
+    float: right;
 }
 
 .loginbar {
