@@ -766,6 +766,29 @@ tr img{
     font-size: 2vw;
 }
 
+
+.add-cover input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+}
+
+.inputfile-cover+label{
+    width: 119px;
+    height: 28px;
+    background: rgba(161, 117, 255, 0.85);
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color : white;
+    cursor: pointer;
+    text-align: center;
+}
+
 .myDiv {
     display: none;
     padding: 10px;
@@ -816,8 +839,16 @@ textarea {
     z-index: -1;
 }
 
+.inputfile-cover {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
 .inputfile+label {
-    margin-top: 30px !important;
     font-size: 0.5em;
     font-weight: 700;
     color: white;
