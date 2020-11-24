@@ -889,7 +889,7 @@ textarea {
 .profile-img .file {
     position: relative;
     overflow: hidden;
-    margin-top: -15%;
+    margin-top: -18%;
     width: 165px;
     border: none;
     border-radius: 0;
@@ -1142,6 +1142,7 @@ textarea {
     .reviwe a .reviwe-btu{
         margin-left: 30%;
         margin-top: 50px;
+        margin-bottom: -100px;
     }
 }
 
@@ -1192,7 +1193,6 @@ textarea {
         width: 250px;
         height: 30px;
     }
-    .registerinfomation input {}
     .registerinfomation select {
         margin-top: 15px;
         backdrop-filter: blur(4px);
@@ -1351,6 +1351,32 @@ textarea {
         width: 100%;
         display: block;
     }
+    .emp-profile {
+        padding: 0px;
+    }
+    .edit-side {
+        text-align: center;
+    }
+    .edit-side .content3{
+font-size: 11px;    
+}
+    .profile-tab {
+        margin-top: 10% !important;
+    }
+    .header-profile {
+        position: relative;
+        top: -230px;
+    text-align: center;
+    }
+    .profile-img img{
+    position: relative;
+    justify-content: center;
+    }
+    .profile-img .file {
+        display: block;
+        margin: auto;
+        margin-top: -50px; 
+     }
 }
 
 @media screen and (max-width: 450px) {
