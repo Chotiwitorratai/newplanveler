@@ -547,6 +547,10 @@ body {
     color: #3c3c3c;
 }
 
+tr img{
+    padding: 10px 20px;
+}
+
 .imgshow {
     margin-top: 150px;
 }
@@ -1171,9 +1175,6 @@ textarea {
         height: 360px;
         left: -50px;
     }
-    .inside {
-        margin-left: -250px;
-    }
     #loginpage .optionpassword {
         margin-left: 0px !important;
     }
@@ -1445,6 +1446,12 @@ font-size: 11px;
 @media screen and (max-width: 356px) {
     #cardpic {
         margin: 100px !important;
+    }
+    .botbar-data {
+        font-size:9px !important;
+    }
+    .botbar-data h1{
+        font-size:12px !important;
     }
 }
 
