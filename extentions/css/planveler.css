@@ -768,12 +768,12 @@ tr img{
 
 
 .add-cover input {
-	width: 0.1px;
-	height: 0.1px;
+	width: 119px;
+	height: 28px;
 	opacity: 0;
 	overflow: hidden;
-	position: absolute;
-    z-index: -1;
+    position: absolute;
+    cursor: pointer;
 }
 
 .inputfile-cover+label{
@@ -837,15 +837,7 @@ textarea {
     overflow: hidden;
     position: absolute;
     z-index: -1;
-}
-
-.inputfile-cover {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
+    cursor: pointer;
 }
 
 .inputfile+label {

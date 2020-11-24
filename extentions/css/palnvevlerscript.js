@@ -45,7 +45,7 @@ function moreFields() {
     console.log(attr.value);
     }
 
-// window.onload = moreFields;
+window.onload = moreFields;
 
 function moreDays() {
     counter++;
