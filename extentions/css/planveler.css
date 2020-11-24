@@ -922,7 +922,7 @@ textarea {
 .profile-img .file {
     position: relative;
     overflow: hidden;
-    margin-top: -18%;
+    margin-top: -50px;
     width: 165px;
     border: none;
     border-radius: 0;
