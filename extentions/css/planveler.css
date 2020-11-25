@@ -430,6 +430,10 @@ body {
     padding-left: 10px;
 }
 
+.card-title {
+    margin-bottom: 3rem;
+}
+
 .loginbtu {
     position: absolute;
     top: 115%;
@@ -522,11 +526,6 @@ body {
     padding: 20px;
 }
 
-.card-body a {
-    position: absolute;
-    bottom: 10px;
-    right: 5px;
-}
 
 .quote {
     float: right;
@@ -795,6 +794,29 @@ tr img{
     text-align: center;
 }
 
+.card-text {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.alltrip {
+    
+    justify-content: center;
+}
+
+.alltrip-card {
+margin-bottom: 120px;    text-align: center;
+    
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
 .myDiv {
     display: none;
     padding: 10px;
@@ -919,15 +941,13 @@ textarea {
     height: 183px;
 }
 
-.profile-img .file {
+.card-body a {
     position: relative;
     overflow: hidden;
     margin-top: -50px;
     width: 165px;
     border: none;
-    border-radius: 0;
-    font-size: 15px;
-    background: #212529b8;
+    font-size: 14px;
 }
 
 .profile-img .file input {
@@ -980,11 +1000,13 @@ textarea {
     text-align: center;
     color: #444444;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 150px;
 }
 
 .alltrip-add button {
     position: absolute;
-    top: 300px;
+    top: 220px;
+    right:30;
     width: 105px;
     height: 38px;
     margin-left: 58px;
@@ -1013,7 +1035,7 @@ textarea {
     line-height: 24px;
     color: #FFFFFF;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .alltrip-img img {
@@ -1149,6 +1171,11 @@ textarea {
 @media screen and (max-width: 572px) {
     .registerinfomation {
         width: 500px;
+    }
+    .alltrip-add button{
+        position: absolute;
+        top: 300px;
+        left: 20%;
     }
 }
 @media screen and (max-width:548px) {
@@ -1423,10 +1450,6 @@ font-size: 11px;
     }
     .bigquote {
         font-size: 24px;
-    }
-    .card {
-        width: 300px;
-        margin-left: -90px;
     }
     .bigimg {
         display: none;
