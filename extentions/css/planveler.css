@@ -693,7 +693,15 @@ tr img{
     margin-top: 200px;
 }
 
-.commentbox {
+textarea .commentbox {
+    width: 100%;
+    height: 232px;
+    padding: 10px;
+    background-color: #F8FDFB;
+}
+
+
+.commentbox{
     width: 70%;
     margin-left: 30px;
     height: 232px;  
@@ -701,6 +709,8 @@ tr img{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
+
+
 
 .tagbox {
     width: 20%;
