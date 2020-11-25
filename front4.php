@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../extentions/css/planvele.css">
+    <link rel="stylesheet" href="../extentions/css/planveler.css">
     <link rel="stylesheet" href="bootstrap-4/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
@@ -161,13 +161,24 @@
             <select name="menu" onChange="MM_jumpMenu('parent',this,0)">
                 <?php
                 for ($i = 0; $i <= 50; $i++) {
+
+
                     if ($_GET["Line"] == $i) {
                         $sel = "selected";
                     } else {
                         $sel = "";
                     }
+
+                    $a = $i;
+                    $b = $a - 1;
+
                 ?>
-                    <option value="<?php echo $_SERVER["PHP_SELF"]; ?>?Line=<?php echo $i; ?>" <?php echo $sel; ?>><?php echo $i; ?></option>
+                    <option value="<?php
+
+                                    if ($b != -1) {
+
+                                        echo $_SERVER["PHP_SELF"]; ?>?Line=<?php echo $i; ?>" <?php echo $sel; ?>><?php echo $b;
+                                                                                                                } ?></option>
                 <?php
                 }
                 ?>
@@ -181,10 +192,12 @@
                     for ($i = 1; $i <= $line; $i++) {
                     ?>
                         <div class="container justify-content-center tripblock" id="<?php echo $i; ?> tripblock writeroot">
+
+
                             <div class="row">
                                 <div class="col-2">
                                     <div class="triptime">
-                                        <input type="int" id="time_use" name="time_use<?php echo $i; ?>" placeholder="เวลา">
+                                        <input type="int" id="time_use<?php echo $i; ?>" name="time_use<?php echo $i; ?>" placeholder="เวลา">
                                     </div>
                                 </div>
                                 <div class="col-5">
@@ -241,14 +254,33 @@
                     }
             ?>
 
+<div class="container-fluid comment">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="content-3">Detail trip</label>
+                                        <textarea type="text" id="trip_detail" name="trip_detail" rows="8" cols="auto" placeholder="รายละเอียดทริป"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
             <div id="writeroot" style="border:none;"><br></div>
 
             <div class="row justify-content-center tripblock ">
-            <div class="btn-a ddform">
-                <!-- <input type="button" value="เพิ่ม" onclick="moreFields();" /> -->
-                <input type="submit" onclick="saveLocation()" value="จบทริป" >
-                <input type="hidden" name="hdnLine" value="<?php echo $i; ?>">
-            </div></div>
+
+          
+
+                <div class="btn-a ddform">
+                    <!-- <input type="button" value="เพิ่ม" onclick="moreFields();" /> -->
+                    
+                   
+                    <input type="submit" onclick="saveLocation()" value="จบทริป">
+                    <input type="hidden" name="hdnLine" value="<?php echo $i; ?>">
+                </div>
+            </div>
     </div>
     </form>
     </div>

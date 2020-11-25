@@ -47,10 +47,10 @@ for ($i = 1; $i < $_POST["hdnLine"]; $i++) {
 
 
         $strSQL = "INSERT INTO tbl_location ";
-        $strSQL .= "(location_name,location_detail,trip_name,image_name,image_trip_name,travel_type,time_use,time_travel) ";
+        $strSQL .= "(location_name,location_detail,trip_detail,trip_name,image_name,image_trip_name,travel_type,time_use,time_travel) ";
         $strSQL .= "VALUES ";
 
-        $strSQL .= "('" . $_POST["location_name$i"] . "','" . $_POST["location_detail$i"] . "', ";
+        $strSQL .= "('" . $_POST["location_name$i"] . "','" . $_POST["location_detail$i"] . "','" . $_POST["trip_detail"] . "', ";
         $strSQL .= "'" . $_POST["trip_name"] . "','$new_file_name','$new_file_name_trip', ";
         $strSQL .= "'" . $_POST["travel_type$i"] . "', ";
         $strSQL .= "'" . $_POST["time_use$i"] . "','" . $_POST["time_travel$i"] . "' )";
