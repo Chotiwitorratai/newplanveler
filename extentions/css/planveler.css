@@ -430,10 +430,6 @@ body {
     padding-left: 10px;
 }
 
-.card-title {
-    margin-bottom: 3rem;
-}
-
 .loginbtu {
     position: absolute;
     top: 115%;
@@ -526,6 +522,11 @@ body {
     padding: 20px;
 }
 
+.card-body a {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
 
 .quote {
     float: right;
@@ -693,15 +694,7 @@ tr img{
     margin-top: 200px;
 }
 
-textarea .commentbox {
-    width: 100%;
-    height: 232px;
-    padding: 10px;
-    background-color: #F8FDFB;
-}
-
-
-.commentbox{
+.commentbox {
     width: 70%;
     margin-left: 30px;
     height: 232px;  
@@ -709,8 +702,6 @@ textarea .commentbox {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 1px 1px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
-
-
 
 .tagbox {
     width: 20%;
@@ -802,29 +793,6 @@ textarea .commentbox {
     color : white;
     cursor: pointer;
     text-align: center;
-}
-
-.card-text {
-    text-align: center;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.alltrip {
-    
-    justify-content: center;
-}
-
-.alltrip-card {
-margin-bottom: 120px;    text-align: center;
-    
-}
-
-.card {
-    display: flex;
-    justify-content: center;
 }
 
 .myDiv {
@@ -951,13 +919,15 @@ textarea {
     height: 183px;
 }
 
-.card-body a {
+.profile-img .file {
     position: relative;
     overflow: hidden;
     margin-top: -50px;
     width: 165px;
     border: none;
-    font-size: 14px;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
 }
 
 .profile-img .file input {
@@ -1010,13 +980,11 @@ textarea {
     text-align: center;
     color: #444444;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 150px;
 }
 
 .alltrip-add button {
     position: absolute;
-    top: 220px;
-    right:30;
+    top: 300px;
     width: 105px;
     height: 38px;
     margin-left: 58px;
@@ -1045,7 +1013,7 @@ textarea {
     line-height: 24px;
     color: #FFFFFF;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .alltrip-img img {
@@ -1182,11 +1150,6 @@ textarea {
     .registerinfomation {
         width: 500px;
     }
-    .alltrip-add button{
-        position: absolute;
-        top: 300px;
-        left: 20%;
-    }
 }
 @media screen and (max-width:548px) {
     .comment .row{
@@ -1293,6 +1256,25 @@ textarea {
     }
 }
 
+#location_name1 {
+    display: none;
+}
+
+#location_detail1 {
+    display: none;
+}
+#addimgtrip1 {
+    display: none;
+}
+#time_use1 {
+    display: none;
+}
+#colorselector1 {
+    display: none;
+}
+#timetrip1 {
+    display: none;
+}
 @media screen and (max-width: 3400px) {
     .loginbar {
         position: fixed;
@@ -1460,6 +1442,10 @@ font-size: 11px;
     }
     .bigquote {
         font-size: 24px;
+    }
+    .card {
+        width: 300px;
+        margin-left: -90px;
     }
     .bigimg {
         display: none;
